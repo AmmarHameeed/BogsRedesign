@@ -61,7 +61,7 @@ font-style: normal;
   top: 134px;
   right:0;
     background-color: rgba(0,0,0,0.37);
-    height: 100%;
+    height: calc(100% - 134px);
     width: 100%;
     opacity: 0;
     transition: opacity .75s ease-in-out;

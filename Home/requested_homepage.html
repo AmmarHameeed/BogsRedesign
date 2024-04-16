@@ -138,7 +138,7 @@
                         </button>
 
                         <button type="button"
-                            class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden  focus:outline-none"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="absolute -inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
@@ -169,18 +169,19 @@
     </nav>
     <!-- Mobile Mega Menu -->
 
-    <div class=" absolute z-10 w-full transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
+    <div class=" absolute z-10 w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
         role="menu" id="mobile__menu" aria-labelledby="openmenu">
+        
         <nav
-            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full max-w-75pc  p-5 transform-none opacity-100">
+            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full p-5 pt-11 transform-none opacity-100">
             <div class=" absolute top-1.5 right-2.5 z-10 closeMobileMenu">
                 <i class="close__icon"></i>
             </div>
             <!-- <h2 class="text-3xl">Menu</h2> -->
             <div class="join join-vertical w-full">
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
                         Men
                     </div>
                     <div class="collapse-content">
@@ -247,9 +248,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
                         Women
                     </div>
                     <div class="collapse-content">
@@ -316,9 +317,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl px-0 py-2 border-b border-black font-medium">
                         Kids
                     </div>
                     <div class="collapse-content">
@@ -385,12 +386,13 @@
                         </div>
                     </div>
                 </div>
-                <a class="collapse-title text-xl font-medium" href="#">Work</a>
-                <a class="collapse-title text-xl font-medium" href="#">ReUse</a>
-                <a class="collapse-title text-xl font-medium" href="#">Sale</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">Work</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">ReUse</a>
+                <a class="collapse-title text-xl min-h-0 px-0 py-2 font-medium" href="#">Sale</a>
             </div>
         </nav>
     </div>
+    <div id="mobileMenu__overlay" class="lg:hidden"></div>
 
     <!-- Desktop Mega Menu -->
     <div class="mega__menu relative bg-bogsGray">
@@ -786,11 +788,11 @@
                     </ul>
                 </div>
                 <div class="w-full lg:w-unset flex items-center justify-center lg:px-2 pr-0 lg:justify-end">
-                    <div class="w-full max-w-lg lg:max-w-xs">
+                    <div class="w-full lg:max-w-xs">
                         <label for="search" class="sr-only">Search</label>
                         <div class="relative">
                             <input id="search" name="search"
-                                class="block w-full rounded-full border border-black bg-white py-1.5 pr-10 pl-3 text-black-900 !outline-none placeholder:text-black sm:text-sm sm:leading-6"
+                                class="block w-full rounded-full border-1.5 border-black bg-white py-1.5 pr-10 pl-3 text-black-900 !outline-none placeholder:text-black sm:text-sm sm:leading-6"
                                 placeholder="Search" type="search">
                             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
                                 <svg class="h-5 w-5 text-black-900" viewBox="0 0 20 20" fill="currentColor"
@@ -803,6 +805,12 @@
 
                         </div>
                     </div>
+                </div>
+                <div class="w-full mt-5 flex justify-between lg:hidden">
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Men</a>
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Women</a>
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Kids</a>
+                    
                 </div>
             </div>
         </nav>

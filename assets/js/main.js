@@ -2,9 +2,11 @@ $(document).ready(function () {
   console.log("Page loaded successfully");
 
   var screenHeightOnLoad = $("html").height();
-  var minusHeight = 138;
+  console.log("->",screenHeightOnLoad)
+  var minusHeight = 261;
 
   var adjustedHeight = screenHeightOnLoad - minusHeight;
+  console.log("->",adjustedHeight);
 
   $("#mobile__menu, #mobileMenu__overlay").css("height", adjustedHeight);
 
@@ -21,7 +23,7 @@ $(document).ready(function () {
     document.getElementById("mobile__menu").classList.remove("opened");
   });
 
-  $("#mobileMenu__overlay").on("click", function(){
+  $("#mobileMenu__overlay").on("click touchmove", function(){
     document.getElementById("mobile__menu").classList.remove("opened");
   })
 
