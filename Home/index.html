@@ -19,6 +19,7 @@
 </head>
 
 <body class="font-TradeGothic_std">
+    
     <nav class="bg-bogsGray lg:bg-black">
         <div class="max-w-bogs mx-5 min-[1750px]:mx-auto  lg:mx-12">
             <div class="">
@@ -26,7 +27,7 @@
                     <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                         <!-- Mobile menu button-->
                         <a href="" class="flex lg:hidden items-center space-x-3 rtl:space-x-reverse">
-                            <img src="../assets/images/global/bogs-logo-dark.png" class="h-10" alt="BOGs Logo" />
+                            <img src="../assets/images/global/bogs-logo-dark.svg" class="h-10" alt="BOGs Logo" />
                         </a>
                     </div>
                     <div class="hidden lg:flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -35,10 +36,10 @@
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <a href="#"
-                                    class="text-white hover:bg-gray-700 rounded-md px-3 py-2 pl-0 text-sm font-medium"
+                                    class="text-white rounded-md px-3 py-2 pl-0 text-sm font-medium"
                                     aria-current="page">Help</a>
                                 <a href="#"
-                                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
+                                    class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
                                     Shipping Policy</a>
                             </div>
                         </div>
@@ -61,7 +62,7 @@
 
                         <div class="ml-3">
                             <button
-                                class="relative rounded-full p-1 flex text-black lg:text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                class="relative rounded-full p-1 flex text-black lg:text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
                                 type="button" data-dropdown-toggle="country_dropdown">
                                 <span>US</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -73,7 +74,7 @@
                             </svg>
                             </button>
                             <!-- Dropdown menu -->
-                            <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
                                 id="country_dropdown">
                                 <ul class="py-1" aria-labelledby="country_dropdown">
                                     <li>
@@ -94,7 +95,7 @@
                         </div>
                         <div class="ml-3">
                             <button
-                                class="relative rounded-full p-1 flex text-black lg:text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                class="relative rounded-full p-1 flex text-black lg:text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
                                 type="button" data-dropdown-toggle="user_dropdown">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -103,7 +104,7 @@
                                 </svg>
                             </button>
                             <!-- Dropdown menu -->
-                            <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
                                 id="user_dropdown">
                                 <ul class="py-1" aria-labelledby="user_dropdown">
                                     <li>
@@ -127,7 +128,7 @@
                         </div>
 
                         <button type="button"
-                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
+                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white  hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View cart</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -138,7 +139,7 @@
                         </button>
 
                         <button type="button"
-                            class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden  focus:outline-none"
                             aria-controls="mobile-menu" aria-expanded="false">
                             <span class="absolute -inset-0.5"></span>
                             <span class="sr-only">Open main menu</span>
@@ -169,18 +170,19 @@
     </nav>
     <!-- Mobile Mega Menu -->
 
-    <div class=" absolute z-10 w-full transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
+    <div class=" absolute z-10 w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
         role="menu" id="mobile__menu" aria-labelledby="openmenu">
+        
         <nav
-            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full max-w-75pc p-5 transform-none opacity-100">
+            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full   p-5 transform-none opacity-100">
             <div class=" absolute top-1.5 right-2.5 z-10 closeMobileMenu">
                 <i class="close__icon"></i>
             </div>
             <!-- <h2 class="text-3xl">Menu</h2> -->
             <div class="join join-vertical w-full">
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
                         Men
                     </div>
                     <div class="collapse-content">
@@ -247,9 +249,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
                         Women
                     </div>
                     <div class="collapse-content">
@@ -316,9 +318,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse join-item">
-                    <input type="radio" name="mobileMenuAccordion" />
-                    <div class="collapse-title text-xl font-medium">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl px-0 py-2 border-b border-black font-medium">
                         Kids
                     </div>
                     <div class="collapse-content">
@@ -385,19 +387,20 @@
                         </div>
                     </div>
                 </div>
-                <a class="collapse-title text-xl font-medium" href="#">Work</a>
-                <a class="collapse-title text-xl font-medium" href="#">ReUse</a>
-                <a class="collapse-title text-xl font-medium" href="#">Sale</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">Work</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">ReUse</a>
+                <a class="collapse-title text-xl min-h-0 px-0 py-2 font-medium" href="#">Sale</a>
             </div>
         </nav>
     </div>
+    <div id="mobileMenu__overlay"></div>
 
     <!-- Desktop Mega Menu -->
     <div class="mega__menu relative bg-bogsGray">
         <nav class="py-5.5 mx-5  max-w-bogs lg:mx-12 min-[1750px]:mx-auto">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-full">
                 <a href="" class="hidden lg:flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="../assets/images/global/bogs-logo-dark.png" class="h-10" alt="BOGs Logo" />
+                    <img src="../assets/images/global/bogs-logo-dark.svg" class="h-10" alt="BOGs Logo" />
                 </a>
 
                 <div id="mega-menu"
@@ -417,11 +420,11 @@
                             <div id="mega-menu-dropdown-men"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
-                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <h4 class="text-lg text-black font-medium">Shop (Men)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
                                                 <li>
                                                     <a href="#"
@@ -484,7 +487,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -539,11 +542,11 @@
                             <div id="mega-menu-dropdown-women"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 text-gray-900 pl-12 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
-                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <h4 class="text-lg text-black font-medium">Shop (Women)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
                                                 <li>
                                                     <a href="#"
@@ -606,7 +609,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -661,11 +664,11 @@
                             <div id="mega-menu-dropdown-kids"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
-                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <h4 class="text-lg text-black font-medium">Shop (Kids)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
                                                 <li>
                                                     <a href="#"
@@ -728,7 +731,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -785,12 +788,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-full lg:w-unset flex items-center justify-center px-2 pr-0 lg:justify-end">
-                    <div class="w-full max-w-lg lg:max-w-xs">
+                <div class="w-full lg:w-unset flex items-center justify-center lg:px-2 pr-0 lg:justify-end">
+                    <div class="w-full lg:max-w-xs">
                         <label for="search" class="sr-only">Search</label>
                         <div class="relative">
                             <input id="search" name="search"
-                                class="block w-full rounded-full border border-black bg-white py-1.5 pr-10 pl-3 text-black-900 !outline-none placeholder:text-black sm:text-sm sm:leading-6"
+                                class="block w-full rounded-full border-1.5 border-black bg-white py-1.5 pr-10 pl-3 text-black-900 !outline-none placeholder:text-black sm:text-sm sm:leading-6"
                                 placeholder="Search" type="search">
                             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
                                 <svg class="h-5 w-5 text-black-900" viewBox="0 0 20 20" fill="currentColor"
@@ -803,6 +806,12 @@
 
                         </div>
                     </div>
+                </div>
+                <div class="w-full mt-5 flex justify-between lg:hidden">
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Men</a>
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Women</a>
+                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Kids</a>
+                    
                 </div>
             </div>
         </nav>
@@ -835,7 +844,7 @@
         <section id="featured__products" class="mt-9 md:mt-24">
             <!-- Slider main container -->
             <div class="swiper featured__products__swiper">
-                <h4 class="text-xl mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Featured Product For You</h4>
+                <h4 class="text-base mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Featured Product For You</h4>
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper pb-5">
                     <!-- Slides -->
@@ -893,13 +902,13 @@
         <section id="top__category" class="relative mt-9 md:mt-24 mb-12 dual__swiper overflow-hidden">
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative w-49-1/2">
-                    <h4 class="text-xl mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Women's Arcata</h4>
+                    <h4 class="text-base mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Women's Arcata</h4>
                     <img class="" src="../assets/images/home/Bogs-WomensArcata.jpg" />
                     <a href="#"
                         class="shop__btn absolute left-[28px] md:left-[14%] bottom-[9%] inline-block text-center text-shop__btnFontSize font-FrontPage uppercase w-hundredPx h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded hover:bg-white hover:text-black">Shop</a>
                 </div>
                 <div class="swiper-slide relative w-49-1/2">
-                    <h4 class="text-xl mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Men's Classic Adjustable
+                    <h4 class="text-base mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Men's Classic Adjustable
                     </h4>
                     <img class="" src="../assets/images/home/Bogs-MensClassicAdjustable.jpg" />
                     <a href="#"
@@ -910,7 +919,7 @@
         </section>
 
         <section id="technology__section">
-            <h4 class="text-xl mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Seamless Technology</h4>
+            <h4 class="text-base mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Seamless Technology</h4>
             <div class="technology__content--wrapper relative">
                 <picture>
                     <source media="(min-width:768px)" srcset="../assets/images/home/seamless-tech-Desktop.jpg">
@@ -927,14 +936,14 @@
                         at 150K flexes. That’s 7 times more durable than other boots. They keep working so you keep
                         working.</p>
                     <a href="#"
-                        class="shop__btn hidden md:block absolute inline-block text-center text-shop__btnFontSize font-FrontPage uppercase w-hundredPx h-shop__btnHeight leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded">Shop</a>
+                        class="shop__btn hidden md:block absolute inline-block text-center text-shop__btnFontSize font-FrontPage uppercase w-hundredPx h-shop__btnHeight leading-10 bg-white text-black rounded-shop__btnRounded border-2 border-transparent hover:border-white hover:border-2 hover:bg-transparent hover:text-white">Shop</a>
 
                 </div>
             </div>
         </section>
 
         <section id="influencer__section" class="mt-12">
-            <h4 class="text-xl mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Featured Influencer</h4>
+            <h4 class="text-base mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Featured Influencer</h4>
             <div class="relative">
                 <picture>
                     <source media="(min-width:768px)" srcset="../assets/images/home/Influencer-Module-Desktop.jpg">
@@ -948,7 +957,7 @@
                     <p class="mb-7 text-sm  leading-8 [font-size:_clamp(0.875rem,0.792rem+0.4425vw,1.5rem)]">Any other boot would have been completely shredded and destroyed
                         by now. But not BOGS, they are super high quality and comfortable.</p>
                     <a href="#"
-                        class="shop__btn hidden md:block absolute inline-block text-center text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn h-shop__btnHeight leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded">Watch
+                        class="shop__btn hidden md:block absolute inline-block text-center text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn h-shop__btnHeight leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Watch
                         Video</a>
                 </div>
                 <div class="absolute w-[calc(100%-30px)] mt-60Pc h-[-webkit-fill-available] left-15 bottom-60 md:bottom-auto md:left-auto md:mt-0 md:w-influencer__section__right md:h-[calc(100%-96px)] right-12 top-12">
@@ -977,13 +986,13 @@
     <footer class="bg-black" aria-labelledby="footer-heading">
         <div class="inner__footer max-w-bogs mx-auto">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="px-5 pb-16 pt-4 sm:pt-16 lg:px-8 lg:pt-16">
+            <div class="px-5 pb-8 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
                 <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
                     <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
                         <div class="md:grid md:grid-cols-1 md:gap-8">
                             <div>
                                 <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
-                                <ul role="list" class="mt-6 space-y-4">
+                                <ul role="list" class="mt-6 space-y-2">
                                     <li>
                                         <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
                                     </li>
@@ -1008,7 +1017,7 @@
                         <div class="md:grid md:grid-cols-1 md:gap-8">
                             <div>
                                 <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
-                                <ul role="list" class="mt-6 space-y-4">
+                                <ul role="list" class="mt-6 space-y-2">
                                     <li>
                                         <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
                                             Use</a>
@@ -1034,7 +1043,7 @@
                         <div class="md:grid md:grid-cols-1 md:gap-8">
                             <div>
                                 <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
-                                <ul role="list" class="mt-6 space-y-4">
+                                <ul role="list" class="mt-6 space-y-2">
                                     <li>
                                         <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
                                             Boots</a>
@@ -1062,10 +1071,10 @@
                         <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
                             <!-- <label for="email-address" class="sr-only">Email address</label> -->
                             <input type="email" name="email-address" id="email-address" autocomplete="email" required
-                                class="w-full min-w-0 appearance-none rounded-full border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-full sm:text-sm sm:leading-6 xl:w-full"
+                                class="w-full h-12 lg:h-14 rounded-full border-0 bg-white outline-none px-6 pt-1 text-lg placeholder:text-black"
                                 placeholder="Enter Email Address">
                             <input type="tel" name="phone" id="phone" autocomplete="phone" required
-                                class="mt-3 w-full min-w-0 appearance-none rounded-full border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-full sm:text-sm sm:leading-6 xl:w-full"
+                                class="mt-3 w-full h-12 lg:h-14 rounded-full border-0 outline-none bg-white px-6 pt-1 text-lg placeholder:text-black"
                                 placeholder="Enter Phone Number">
                             <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
                                 <button type="submit"

@@ -26,7 +26,7 @@
                     <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                         <!-- Mobile menu button-->
                         <a href="" class="flex lg:hidden items-center space-x-3 rtl:space-x-reverse">
-                            <img src="../assets/images/global/bogs-logo-dark.png" class="h-10" alt="BOGs Logo" />
+                            <img src="../assets/images/global/bogs-logo-dark.svg" class="h-10" alt="BOGs Logo" />
                         </a>
                     </div>
                     <div class="hidden lg:flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -35,16 +35,16 @@
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                                 <a href="#"
-                                    class="text-white hover:bg-gray-700 rounded-md px-3 py-2 pl-0 text-sm font-medium"
+                                    class="text-white rounded-md px-3 py-2 pl-0 text-sm font-medium"
                                     aria-current="page">Help</a>
                                 <a href="#"
-                                    class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
+                                    class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
                                     Shipping Policy</a>
                             </div>
                         </div>
                     </div>
                     <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:ml-6 sm:pr-0">
-                        <button type="button"
+                        <!-- <button type="button"
                             class="hidden relative rounded-full p-1 lg:flex text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
                             US
                             <span class="absolute -inset-1.5"></span>
@@ -57,12 +57,45 @@
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
                             </svg>
 
-                        </button>
+                        </button> -->
 
                         <div class="ml-3">
                             <button
-                                class="relative rounded-full p-1 flex text-black lg:text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
-                                type="button" data-dropdown-toggle="dropdown">
+                                class="relative rounded-full p-1 flex text-black lg:text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                type="button" data-dropdown-toggle="country_dropdown">
+                                <span>US</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 ml-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                                id="country_dropdown">
+                                <ul class="py-1" aria-labelledby="country_dropdown">
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">US</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">CA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">AU</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <button
+                                class="relative rounded-full p-1 flex text-black lg:text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                type="button" data-dropdown-toggle="user_dropdown">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -70,9 +103,9 @@
                                 </svg>
                             </button>
                             <!-- Dropdown menu -->
-                            <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
-                                id="dropdown">
-                                <ul class="py-1" aria-labelledby="dropdown">
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                                id="user_dropdown">
+                                <ul class="py-1" aria-labelledby="user_dropdown">
                                     <li>
                                         <a href="#"
                                             class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Home</a>
@@ -94,7 +127,7 @@
                         </div>
 
                         <button type="button"
-                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
+                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white  hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View cart</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -139,7 +172,7 @@
     <div class=" absolute z-10 w-full transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
         role="menu" id="mobile__menu" aria-labelledby="openmenu">
         <nav
-            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full max-w-75pc p-5 transform-none opacity-100">
+            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full max-w-75pc  p-5 transform-none opacity-100">
             <div class=" absolute top-1.5 right-2.5 z-10 closeMobileMenu">
                 <i class="close__icon"></i>
             </div>
@@ -364,7 +397,7 @@
         <nav class="py-5.5 mx-5  max-w-bogs lg:mx-12 min-[1750px]:mx-auto">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-full">
                 <a href="" class="hidden lg:flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="../assets/images/global/bogs-logo-dark.png" class="h-10" alt="BOGs Logo" />
+                    <img src="../assets/images/global/bogs-logo-dark.svg" class="h-10" alt="BOGs Logo" />
                 </a>
 
                 <div id="mega-menu"
@@ -384,11 +417,11 @@
                             <div id="mega-menu-dropdown-men"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
-                                            <h4 class="text-lg text-black font-medium">Shop(Men)</h4>
+                                            <h4 class="text-lg text-black font-medium">Shop (Men)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
                                                 <li>
                                                     <a href="#"
@@ -451,7 +484,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -506,9 +539,9 @@
                             <div id="mega-menu-dropdown-women"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 text-gray-900 pl-12 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
                                             <h4 class="text-lg text-black font-medium">Shop (Women)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
@@ -573,7 +606,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -628,9 +661,9 @@
                             <div id="mega-menu-dropdown-kids"
                                 class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
                                 <div
-                                    class="mega-menu-dropdownWrapper max-w-75pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
                                     <div
-                                        class="mt-5 mb-5 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
                                         <div class="text-innerText">
                                             <h4 class="text-lg text-black font-medium">Shop (Kids)</h4>
                                             <ul role="list" class="mt-1 space-y-4">
@@ -695,7 +728,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="mt-5 mb-5 ml-10 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
                                         <a class="relative block group" href="#">
                                             <div class="group relative">
                                                 <img class="w-full max-w-navImage object-cover rounded-lg"
@@ -752,7 +785,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-full lg:w-unset flex items-center justify-center px-2 pr-0 lg:justify-end">
+                <div class="w-full lg:w-unset flex items-center justify-center lg:px-2 pr-0 lg:justify-end">
                     <div class="w-full max-w-lg lg:max-w-xs">
                         <label for="search" class="sr-only">Search</label>
                         <div class="relative">
@@ -778,7 +811,7 @@
 
     <div class="spaced__container mx-5 lg:mx-12 2xl:max-w-bogs min-[1750px]:m-auto">
         <section id="candid__section">
-            <h4 class="text-xl mt-14 mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Product
+            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Product
                 Testimonials & Reviews</h4>
             <div class="flex flex-col lg:flex-row w-full">
                 <div class="relative w-full lg:w-65Pc">
@@ -798,13 +831,13 @@
                     <h6 class="text-sm sm:text-base md:text-lg font-TradeGothic_bold mb-2 lg:hidden">Oregon Location Addition</h6>
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 lg:mb-8">I have never had a more dependable set of boots.</p>
                     <a href="#"
-                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded hover:bg-white hover:text-black">Shop Boot</a>
+                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-10 bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Shop Boot</a>
                 </div>
             </div>
         </section>
 
         <section id="featured__category--slider" class="relative mt-9 md:mt-24 mb-12 fullWidth__swiper overflow-hidden">
-            <h4 class="text-xl mt-14 mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Men Suave</h4>
+            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Men Suave</h4>
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative w-full flex ">
                     <picture class="w-full">
@@ -844,7 +877,7 @@
         </section>
 
         <section id="video__section">
-            <h4 class="text-xl mt-14 mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">Video Module</h4>
+            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Video Module</h4>
             <div class="relative">
                 <a href="#">
                     <video autoplay playsinline muted loop id="desktopHomePage" style="width:100%;"
@@ -867,7 +900,7 @@
         </section>
 
         <section class="mobileOnlySwiper overflow-hidden">
-            <h4 class="text-xl mt-14 mb-0 md:text-topCategory_Heading font-TradeGothic_bold leading-11 md:mb-6">How we give back</h4>
+            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">How we give back</h4>
             <div class="relative flex justify-between swiper-wrapper">
                 <div class="swiper-slide relative block group w-32Pc" href="#">
                     <div class="group relative">
@@ -928,7 +961,7 @@
                     <h5 class="hidden md:block md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7.5xl font-BogsHeadline uppercase text-white leading-7.5xl mb-8">Your bogs will go on. <br>
                     and on. and on.</h5>
                     <a href="#"
-                    class="shop__btn absolute bottom-[35px] md:bottom-0 md:relative inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-white hover:text-black">Learn More</a>
+                    class="shop__btn absolute bottom-[35px] md:bottom-0 md:relative inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn More</a>
                 </div>
             </div>
         </section>
@@ -949,7 +982,7 @@
                     <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">When you’re done with your BOGS, send them to us.  (We’ll pay for shipping!)  If they still have love to give, we’ll clean them up and send them to an outdoor education non-profit.   If they’ve reached their end of life, we’ll work with our partner, Recircled, to recycle your old boots into something new.</p>
                     <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">Thanks for helping us reduce our bootprint.</p>
                     <a href="#"
-                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded hover:bg-white hover:text-black">Learn More</a>
+                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Learn More</a>
                 </div>
             </div>
         </section>
@@ -960,119 +993,119 @@
     </div>
 
 
-    <!-- Footer -->
+   <!-- Footer -->
 
-    <footer class="bg-black" aria-labelledby="footer-heading">
-        <div class="inner__footer max-w-bogs mx-auto">
-            <h2 id="footer-heading" class="sr-only">Footer</h2>
-            <div class="px-5 pb-16 pt-4 sm:pt-16 lg:px-8 lg:pt-16">
-                <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
-                    <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
-                        <div class="md:grid md:grid-cols-1 md:gap-8">
-                            <div>
-                                <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Sizing
-                                            Info</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Store
-                                            Locator</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Start A
-                                            Return</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="md:grid md:grid-cols-1 md:gap-8">
-                            <div>
-                                <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
-                                            Use</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Privacy
-                                            Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="text-sm leading-6 text-white hover:opacity-50">Accessibility</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Personal
-                                            Information Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Notice at
-                                            Point of Collection Policy</a>
-                                    </li>
-                            </div>
-                        </div>
-                        <div class="md:grid md:grid-cols-1 md:gap-8">
-                            <div>
-                                <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
-                                            Boots</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">BOGS Women's
-                                            Boots</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
-                                            Waterproof Boots</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
-                                            Waterproof Shoes</a>
-                                    </li>
-                                </ul>
-                            </div>
+   <footer class="bg-black" aria-labelledby="footer-heading">
+    <div class="inner__footer max-w-bogs mx-auto">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="px-5 pb-8 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
+            <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
+                <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div>
+                            <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
+                            <ul role="list" class="mt-6 space-y-2">
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Sizing
+                                        Info</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Store
+                                        Locator</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Start A
+                                        Return</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="hidden xl:block"></div>
-                    <div class="mt-4 mb-10 sm:mt-10 sm:mb-0 order-first md:order-last xl:mt-0">
-                        <h3 class="text-lg font-semibold leading-6 text-white">Stay Connected</h3>
-
-                        <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
-                            <!-- <label for="email-address" class="sr-only">Email address</label> -->
-                            <input type="email" name="email-address" id="email-address" autocomplete="email" required
-                                class="w-full min-w-0 appearance-none rounded-full border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-full sm:text-sm sm:leading-6 xl:w-full"
-                                placeholder="Enter Email Address">
-                            <input type="tel" name="phone" id="phone" autocomplete="phone" required
-                                class="mt-3 w-full min-w-0 appearance-none rounded-full border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-full sm:text-sm sm:leading-6 xl:w-full"
-                                placeholder="Enter Phone Number">
-                            <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
-                                <button type="submit"
-                                    class="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
-                            </div>
-
-                        </form>
-                        <p class="mt-2 text-sm leading-6 text-white">*By clicking on the arrow you are signing up for
-                            text and you agree to receive automated recurring marketing messages (including cart
-                            reminders) from BOGS Footwear and accept the Terms & Privacy Policy.</p>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div>
+                            <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
+                            <ul role="list" class="mt-6 space-y-2">
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
+                                        Use</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Privacy
+                                        Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-sm leading-6 text-white hover:opacity-50">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Personal
+                                        Information Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Notice at
+                                        Point of Collection Policy</a>
+                                </li>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-1 md:gap-8">
+                        <div>
+                            <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
+                            <ul role="list" class="mt-6 space-y-2">
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
+                                        Boots</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">BOGS Women's
+                                        Boots</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                        Waterproof Boots</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                        Waterproof Shoes</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="pt-8">
-                    <p class="text-xs leading-5 text-white">&copy; 2024 Bogsfootwear.com, All rights reserved.</p>
+                <div class="hidden xl:block"></div>
+                <div class="mt-4 mb-10 sm:mt-10 sm:mb-0 order-first md:order-last xl:mt-0">
+                    <h3 class="text-lg font-semibold leading-6 text-white">Stay Connected</h3>
+
+                    <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
+                        <!-- <label for="email-address" class="sr-only">Email address</label> -->
+                        <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                            class="w-full h-12 lg:h-14 rounded-full border-0 bg-white outline-none px-6 pt-1 text-lg placeholder:text-black"
+                            placeholder="Enter Email Address">
+                        <input type="tel" name="phone" id="phone" autocomplete="phone" required
+                            class="mt-3 w-full h-12 lg:h-14 rounded-full border-0 outline-none bg-white px-6 pt-1 text-lg placeholder:text-black"
+                            placeholder="Enter Phone Number">
+                        <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
+                            <button type="submit"
+                                class="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+                        </div>
+
+                    </form>
+                    <p class="mt-2 text-sm leading-6 text-white">*By clicking on the arrow you are signing up for
+                        text and you agree to receive automated recurring marketing messages (including cart
+                        reminders) from BOGS Footwear and accept the Terms & Privacy Policy.</p>
                 </div>
             </div>
+            <div class="pt-8">
+                <p class="text-xs leading-5 text-white">&copy; 2024 Bogsfootwear.com, All rights reserved.</p>
+            </div>
         </div>
+    </div>
 
-    </footer>
+</footer>
     <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

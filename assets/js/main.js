@@ -6,20 +6,24 @@ $(document).ready(function () {
 
   var adjustedHeight = screenHeightOnLoad - minusHeight;
 
-  $("#mobile__menu").css("height", adjustedHeight);
+  $("#mobile__menu, #mobileMenu__overlay").css("height", adjustedHeight);
 
   const mobileMenuOpen = document.querySelector(".openMobileMenu");
   const mobileMenuClose = document.querySelector(".closeMobileMenu");
 
   mobileMenuOpen.addEventListener("click", () => {
     console.log("clicked");
-    document.getElementById("mobile__menu").classList.add("opened");
+    document.getElementById("mobile__menu").classList.toggle("opened");
   });
 
   mobileMenuClose.addEventListener("click", () => {
     console.log("clicked");
     document.getElementById("mobile__menu").classList.remove("opened");
   });
+
+  $("#mobileMenu__overlay").on("click", function(){
+    document.getElementById("mobile__menu").classList.remove("opened");
+  })
 
   // 4 SLIDES SWIPER
   const swiper = new Swiper(".featured__products__swiper", {

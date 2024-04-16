@@ -12,7 +12,7 @@ tailwind.config = {
             fontSize: {
                 '1750Max_subHeading': '2.1vw',
                 '1750Max_Heading': '8.35vw',
-                'topCategory_Heading': '38px',
+                'topCategory_Heading': '19.2px',
                 'shop__btnFontSize': '28px',
                 // 'technologyHeading': '4.35vw',
                 // 'technologySubheading': '1.25vw',
@@ -45,6 +45,7 @@ tailwind.config = {
                 '65Pc': '65%',
                 'influencer__section__left': '58.5%',
                 'influencer__section__right': '38.65%',
+                '75pc': '75%',
             },
             height: {
                 'unset': 'unset',
@@ -53,8 +54,13 @@ tailwind.config = {
             },
             maxWidth: {
                 'bogs': '1750px',
+                '55pc': '55%',
                 '75pc': '75%',
                 // 'navImage': '174px',
+            },
+            minWidth: {
+                '150': '150px',
+                
             },
             spacing: {
                 '5.5': "1.4rem"
@@ -62,6 +68,7 @@ tailwind.config = {
             lineHeight: {
                 '1750Max_Heading': '7.5vw',
                 '1750Max_subHeading': '45px',
+                'topCategory_Heading': '23px',
                 'shop__btnLineHeight': '42px',
                 'shop__btnLineHeight--sm': '34px',
                 '32': '32px',
@@ -73,6 +80,9 @@ tailwind.config = {
             },
             borderRadius: {
                 'shop__btnRounded': '20px',
+            },
+            borderWidth: {
+                '1.5': '1.5px',
             },
             margin: {
                 'Minus50px': '-50px',

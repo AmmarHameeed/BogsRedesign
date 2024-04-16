@@ -26,13 +26,13 @@ font-style: normal;
 
 @font-face {
 font-family: 'tradeGothic_bold';
-src: url('../fonts/Trade-Gothic-Next-LT-Pro-BdCn.ttf');
+src: url('../fonts/TradeGothicLTStd-Bd2.otf');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'tradeGothic_std';
-src: url('../fonts/Trade-Gothic-LT-Std.otf');
+src: url('../fonts/TradeGothicLTStd.otf');
 font-weight: normal;
 font-style: normal;
 }
@@ -52,12 +52,27 @@ font-style: normal;
 
 #mobile__menu{
   left: -1000px;
-  top: 138px;
+  top: 134px;
   transition:left .25s ease-in-out;
+}
+#mobileMenu__overlay{
+  /* display: none; */
+  position: absolute;
+  top: 134px;
+  right:0;
+    background-color: rgba(0,0,0,0.37);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
+    z-index: 9;
 }
 #mobile__menu.opened{
   left: 0;
-  background: rgba(0,0,0,0.37);
+}
+#mobile__menu.opened + #mobileMenu__overlay{
+  /* display: block; */
+  opacity: 1;
 }
 
 .close__icon{
@@ -141,6 +156,7 @@ font-style: normal;
 }
 
 /* Swiper Styles END */
+
 
 @media screen and (min-width: 1921px) {
   .technology__heading{
