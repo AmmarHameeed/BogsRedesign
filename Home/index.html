@@ -127,7 +127,7 @@
                         </div>
 
                         <button type="button"
-                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white  hover:text-white focus:outline-none focus:ring-0 focus:ring-none">
+                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white focus:outline-none focus:ring-0 focus:ring-none">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View cart</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -136,6 +136,16 @@
                                     d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
                         </button>
+                        <!-- <button type="button" onclick="cart__modal.showModal()"
+                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white focus:outline-none focus:ring-0 focus:ring-none">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">View cart</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </button> -->
 
                         <button type="button"
                             class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden  focus:outline-none"
@@ -1001,15 +1011,62 @@
         </section>
     </div>
 
+    <!-- Modal for shrinked video -->
     <div class="fixed top-0 w-full h-full bg-black bg-opacity-50 hidden overflow-auto z-50" id="video-modal">
-        <div class="h-screen mx-auto p-4 rounded shadow-md max-w-75pc">
-            <button class="text-white text-xl hover:text-gray-600 focus:outline-none p-2 absolute right-1 top-1"
+        <div class="h-screen mx-auto p-4 rounded text-center shadow-md flex justify-center">
+            <button class="close-modal text-white text-xl hover:text-gray-600 focus:outline-none p-2 absolute right-1 top-1"
                 id="close-modal">
                 &times;
             </button>
-            <iframe id="video-iframe" class="w-full h-full" frameborder="0" allow="autoplay"></iframe>
+            <iframe id="video-iframe" class="w-1/3 h-full z-10 relative" frameborder="0" allow="autoplay"></iframe>
+            <div class="close-modal absolute top-0 left-0 w-full h-full "></div>
         </div>
     </div>
+
+    <!-- <button class="btn" onclick="cart__modal.showModal()">open modal</button> -->
+    <dialog id="cart__modal" class="modal">
+        <div class="modal-box rounded-none w-11/12 max-w-5xl">
+            <form method="dialog">
+                <button
+                    class="btn btn-sm btn-circle border border-black absolute hover:opacity-100 right-5 top-5 h-6 w-6 min-h-6 leading-26 bg-transparent hover:border-black  hover:bg-transparent">✕</button>
+            </form>
+            <div class="modal__header flex items-center">
+                <img class="max-w-[45px]" src="../assets/images/global/bogs-ring-logo.svg" />
+                <span class="ml-7 text-2xl capitalize">Added to bogs</span>
+            </div>
+
+            <div class="modal__content flex mt-20">
+                <div class="w-65Pc">
+                    <img />
+                    <div class="flex flex-column">
+                        <h6></h6>
+                        <span></span>
+                        <span></span>
+                        <div>
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+
+                            <span>180</span>
+                            <span>$160</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-35Pc">
+                    <div class="flex justify-between">
+                        <span class="text-23">Subtotal</span>
+                        <span class="text-23">$<span id="item__price" class="">315</span></span>
+                    </div>
+
+                    <a class="block w-full h-12 mt-14 text-center bg-black text-white rounded-3xl leading-11 cursor-pointer border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Checkout (<span id="">2</span>)</a>
+                </div>
+            </div>
+
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
 
     <div class="mt-16 h-16 text-lg capitalize text-center font-bold bg-[#e7e7e7] font-TradeGothic_bold leading-64">
         Winter Boots, Rain Boots & Farm Boots | BOGS Footwear

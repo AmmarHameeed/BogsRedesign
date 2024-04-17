@@ -33,7 +33,7 @@ $(document).ready(function () {
     $("#video-modal").removeClass("hidden");
   });
 
-  $("#close-modal").click(function() {
+  $(".close-modal").click(function() {
     $("#video-modal").addClass("hidden");
     $("#video-iframe").attr("src", "");
     // You can optionally reset the iframe source here:
