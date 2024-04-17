@@ -34,8 +34,7 @@
                         <div class="hidden sm:block">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#"
-                                    class="text-white rounded-md px-3 py-2 pl-0 text-sm font-medium"
+                                <a href="#" class="text-white rounded-md px-3 py-2 pl-0 text-sm font-medium"
                                     aria-current="page">Help</a>
                                 <a href="#"
                                     class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
@@ -64,13 +63,13 @@
                                 class="relative rounded-full p-1 flex text-black lg:text-white hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
                                 type="button" data-dropdown-toggle="country_dropdown">
                                 <span>US</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6 ml-1">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
                             </button>
                             <!-- Dropdown menu -->
                             <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
@@ -88,7 +87,7 @@
                                         <a href="#"
                                             class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">AU</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -171,7 +170,7 @@
 
     <div class=" absolute z-10 w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
         role="menu" id="mobile__menu" aria-labelledby="openmenu">
-        
+
         <nav
             class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full p-5 pt-11 transform-none opacity-100">
             <div class=" absolute top-1.5 right-2.5 z-10 closeMobileMenu">
@@ -386,8 +385,10 @@
                         </div>
                     </div>
                 </div>
-                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">Work</a>
-                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium" href="#">ReUse</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium"
+                    href="#">Work</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium"
+                    href="#">ReUse</a>
                 <a class="collapse-title text-xl min-h-0 px-0 py-2 font-medium" href="#">Sale</a>
             </div>
         </nav>
@@ -807,10 +808,13 @@
                     </div>
                 </div>
                 <div class="w-full mt-5 flex justify-between lg:hidden">
-                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Men</a>
-                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Women</a>
-                    <a class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Kids</a>
-                    
+                    <a
+                        class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Men</a>
+                    <a
+                        class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Women</a>
+                    <a
+                        class="w-32Pc h-[40px] border-1.5 border-black rounded-full flex text-base items-center justify-center">Kids</a>
+
                 </div>
             </div>
         </nav>
@@ -819,33 +823,53 @@
 
     <div class="spaced__container mx-5 lg:mx-12 2xl:max-w-bogs min-[1750px]:m-auto">
         <section id="candid__section">
-            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Product
+            <h4
+                class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">
+                Product
                 Testimonials & Reviews</h4>
             <div class="flex flex-col lg:flex-row w-full">
                 <div class="relative w-full lg:w-65Pc">
-                    <a href="#">
-                        <video playsinline muted loop id="mobileHomePag" class="w-full">
+                    <a class="video__item hover:cursor-pointer"
+                        data-video-url="https://player.vimeo.com/video/919468641">
+                        <picture>
+                            <source media="(min-width:768px)"
+                                srcset="../assets/images/home/wilson__farm__videoThumbnail-Desktop.png">
+                            <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
+                            <img class="h-full w-full min-h-full object-cover rounded-lg rounded-b-none"
+                                src="../assets/images/home/wilson__farm__videoThumbnail-Mobile.png" alt="Boots"
+                                style="width:100%;">
+                        </picture>
+                        <!-- <img class="h-full w-full min-h-full object-cover rounded-lg"
+                            src="../assets/images/home/wilson__farm__videoThumbnail.png" /> -->
+                        <!-- <video playsinline muted loop id="mobileHomePag" class="w-full">
                             <source
                                 src="https://player.vimeo.com/progressive_redirect/playback/919468641/rendition/720p/file.mp4?loc=external&signature=75af8727269f3875903ab6fcca38a7e123528ea539958c9fb7dd6bd402e1ff8b"
                                 type="video/mp4">
-                        </video>
+                        </video> -->
                         <i class="video__play-btn mobile__btn"></i>
                     </a>
                 </div>
-                <div class="w-full flex px-7 py-6 lg:p-[0_4.25%_0_5.7%] bg-[#F4F4F4] lg:bg-white flex-col justify-center lg:w-35Pc">
+                <div
+                    class="w-full flex px-7 py-6 lg:p-[0_4.25%_0_5.7%] bg-[#F4F4F4] lg:bg-white flex-col justify-center lg:w-35Pc">
                     <h3 class="font-BogsHeadline uppercase lg:text-4xl xl:text-5xl hidden lg:block">Wilson Farm</h3>
-                    <span class="block lg:text-xl xl:text-2xl font-TradeGothic_bold mt-1 mb-8 hidden lg:block">Oregon Location Addition</span>
+                    <span class="block lg:text-xl xl:text-2xl font-TradeGothic_bold mt-1 mb-8 hidden lg:block">Oregon
+                        Location Addition</span>
                     <h4 class="text-xl lg:text-3xl xl:text-3.25xl font-TradeGothic_bold lg:mb-6">Eric Wilson</h4>
-                    <h6 class="text-sm sm:text-base md:text-lg font-TradeGothic_bold mb-2 lg:hidden">Oregon Location Addition</h6>
-                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 lg:mb-8">I have never had a more dependable set of boots.</p>
+                    <h6 class="text-sm sm:text-base md:text-lg font-TradeGothic_bold mb-2 lg:hidden">Oregon Location
+                        Addition</h6>
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-6 lg:mb-8">I have never had a
+                        more dependable set of boots.</p>
                     <a href="#"
-                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-10 bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Shop Boot</a>
+                        class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-10 bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Shop
+                        Boot</a>
                 </div>
             </div>
         </section>
 
         <section id="featured__category--slider" class="relative mt-9 md:mt-24 mb-12 fullWidth__swiper overflow-hidden">
-            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Men Suave</h4>
+            <h4
+                class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">
+                Men Suave</h4>
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative w-full flex ">
                     <picture class="w-full">
@@ -853,8 +877,11 @@
                         <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
                         <img src="../assets/images/home/Men_sauvie_Mobile.jpg" alt="Flowers" style="width:100%;">
                     </picture>
-                    <div class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
-                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante tempus ornare. In vulputate sollicitudin.”</p>
+                    <div
+                        class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
+                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas
+                            aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante
+                            tempus ornare. In vulputate sollicitudin.”</p>
                         <span class="text-13 uppercase">William Maxwell</span>
                     </div>
                 </div>
@@ -864,8 +891,11 @@
                         <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
                         <img src="../assets/images/home/Men_sauvie_Mobile.jpg" alt="Flowers" style="width:100%;">
                     </picture>
-                    <div class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
-                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante tempus ornare. In vulputate sollicitudin.”</p>
+                    <div
+                        class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
+                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas
+                            aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante
+                            tempus ornare. In vulputate sollicitudin.”</p>
                         <span class="text-13 uppercase">William Maxwell</span>
                     </div>
                 </div>
@@ -875,8 +905,11 @@
                         <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
                         <img src="../assets/images/home/Men_sauvie_Mobile.jpg" alt="Flowers" style="width:100%;">
                     </picture>
-                    <div class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
-                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante tempus ornare. In vulputate sollicitudin.”</p>
+                    <div
+                        class="absolute text-center w-full px-5 md:w-1/2 bottom-[7%] sm:bottom-[15%] md:top-[50%] md:right-[8%] md:-translate-y-1/2">
+                        <p class="text-base md:text-lg lg:text-xl xl:text-3xl opacity-70 mb-5 2xl:mb-16">“Maecenas
+                            aliquam congue congue. Integer mollis dolor non imperdiet finibus. In gravida quam vel ante
+                            tempus ornare. In vulputate sollicitudin.”</p>
                         <span class="text-13 uppercase">William Maxwell</span>
                     </div>
                 </div>
@@ -885,30 +918,35 @@
         </section>
 
         <section id="video__section">
-            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">Video Module</h4>
+            <h4
+                class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">
+                Video Module</h4>
             <div class="relative">
-                <a href="#">
-                    <video autoplay playsinline muted loop id="desktopHomePage" style="width:100%;"
-                                class="hidden lg:block">
-                                <source
-                                    src="../assets/images/home/WideVid.mp4"
-                                    type="video/mp4">
-                            </video>
-
-                            <!-- The moblie video -->
-                            <video autoplay playsinline muted loop id="mobileHomePag" style="width:100%;"
-                                class="lg:hidden">
-                                <source
-                                    src="../assets/images/home/MobileVid.mp4"
-                                    type="video/mp4">
-                            </video>
-                            <i class="video__play-btn"></i>
+                <a class="hidden video__item hover:cursor-pointer lg:block" data-video-url="../assets/images/home/WideVid.mp4">
+                     <img class="h-full w-full min-h-full object-cover rounded-lg"
+                            src="../assets/images/home/videoModule__videoThumbnail-Desktop.png" />
+                    <!-- <video autoplay playsinline muted loop id="desktopHomePage" style="width:100%;"
+                        class="hidden lg:block">
+                        <source src="../assets/images/home/WideVid.mp4" type="video/mp4">
+                    </video> -->
+                    <i class="video__play-btn"></i>
+                </a>
+                <a class="video__item hover:cursor-pointer lg:hidden" data-video-url="../assets/images/home/MobileVid.mp4">
+                    <!-- The moblie video -->
+                    <img class="h-full w-full min-h-full object-cover rounded-lg"
+                            src="../assets/images/home/videoModule__videoThumbnail-Mobile.png" />
+                    <!-- <video autoplay playsinline muted loop id="mobileHomePag" style="width:100%;" class="lg:hidden">
+                        <source src="../assets/images/home/MobileVid.mp4" type="video/mp4">
+                    </video> -->
+                    <i class="video__play-btn"></i>
                 </a>
             </div>
         </section>
 
         <section class="mobileOnlySwiper overflow-hidden">
-            <h4 class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">How we give back</h4>
+            <h4
+                class="text-base mt-14 mb-1 md:text-topCategory_Heading font-TradeGothic_bold leading-topCategory_Heading md:mb-2">
+                How we give back</h4>
             <div class="relative flex justify-between swiper-wrapper">
                 <div class="swiper-slide relative block group w-32Pc" href="#">
                     <div class="group relative">
@@ -916,11 +954,15 @@
                             src="../assets/images/home/ReDesign-HowWeGiveBack01.png" alt="boot picture" />
                         <div
                             class="absolute top-0 left-0 w-full h-0 p-6 opacity-0 flex flex-col justify-center items-start bg-black/[0.2]  group-hover:h-full group-hover:opacity-100  duration-200">
-                            <h1 class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
+                            <h1
+                                class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
                                 Our Bootprint</h1>
-                                <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et, dapibus placerat libero.</p>
-                                <a href="#"
-                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn More</a>
+                            <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl
+                                lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et,
+                                dapibus placerat libero.</p>
+                            <a href="#"
+                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -928,13 +970,17 @@
                     <div class="group relative">
                         <img class="w-full max-w-navImage object-cover"
                             src="../assets/images/home/ReDesign-HowWeGiveBack02.png" alt="boot picture" />
-                            <div
+                        <div
                             class="absolute top-0 left-0 w-full h-0 p-6 opacity-0 flex flex-col justify-center items-start bg-black/[0.2]  group-hover:h-full group-hover:opacity-100  duration-200">
-                            <h1 class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
+                            <h1
+                                class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
                                 Our Bootprint</h1>
-                                <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et, dapibus placerat libero.</p>
-                                <a href="#"
-                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn More</a>
+                            <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl
+                                lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et,
+                                dapibus placerat libero.</p>
+                            <a href="#"
+                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -942,13 +988,17 @@
                     <div class="group relative">
                         <img class="w-full max-w-navImage object-cover "
                             src="../assets/images/home/ReDesign-HowWeGiveBack03.png" alt="boot picture" />
-                            <div
+                        <div
                             class="absolute top-0 left-0 w-full h-0 p-6 opacity-0 flex flex-col justify-center items-start bg-black/[0.2]  group-hover:h-full group-hover:opacity-100  duration-200">
-                            <h1 class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
+                            <h1
+                                class="text-xl sm:text-2xl text-white mb-5 lg:mb-7 2xl:text-3.25xl font-TradeGothic_bold opacity-0 group-hover:opacity-100 capitalize">
                                 Our Bootprint</h1>
-                                <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et, dapibus placerat libero.</p>
-                                <a href="#"
-                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn More</a>
+                            <p class="text-sm sm:text-base text-white 2xl:text-2xl mb-5 lg:mb-7">Duis consequat nisl
+                                lacinia, semper mauris tempus, auctor urna. Donec velit diam, viverra a augue et,
+                                dapibus placerat libero.</p>
+                            <a href="#"
+                                class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -958,18 +1008,23 @@
         <section class="dynamic__header mt-14">
             <div class="relative">
                 <picture>
-                    <source media="(min-width:768px)" srcset="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Desktop02.jpg">
+                    <source media="(min-width:768px)"
+                        srcset="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Desktop02.jpg">
                     <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
-                    <img src="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Mobile.jpg" alt="Flowers" style="width:100%;">
+                    <img src="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Mobile.jpg" alt="Flowers"
+                        style="width:100%;">
                 </picture>
                 <div class="h-full md:h-auto absolute top-[42%] left-[8%] -translate-y-2/4">
                     <div class="hidden md:block text-center mb-8">
                         <i class="reuse__icon"></i>
                     </div>
-                    <h5 class="hidden md:block md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7.5xl font-BogsHeadline uppercase text-white leading-7.5xl mb-8">Your bogs will go on. <br>
-                    and on. and on.</h5>
+                    <h5
+                        class="hidden md:block md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7.5xl font-BogsHeadline uppercase text-white leading-7.5xl mb-8">
+                        Your bogs will go on. <br>
+                        and on. and on.</h5>
                     <a href="#"
-                    class="shop__btn absolute bottom-[35px] md:bottom-0 md:relative inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn More</a>
+                        class="shop__btn absolute bottom-[35px] md:bottom-0 md:relative inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-white text-black rounded-shop__btnRounded hover:bg-black hover:text-white">Learn
+                        More</a>
                 </div>
             </div>
         </section>
@@ -978,143 +1033,161 @@
             <div class="flex flex-col lg:flex-row w-full">
                 <div class="relative w-full lg:w-65Pc">
                     <picture>
-                        <source media="(min-width:768px)" srcset="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Desktop.jpg">
+                        <source media="(min-width:768px)"
+                            srcset="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Desktop.jpg">
                         <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
-                        <img src="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Mobile.jpg" alt="Flowers" style="width:100%;">
+                        <img src="../assets/images/home/BOGSUSCA-ReDesign-HowWeGiveBack-Mobile.jpg" alt="Flowers"
+                            style="width:100%;">
                     </picture>
                 </div>
                 <div class="w-full flex px-7 py-6 lg:p-[0_4.25%_0_5.7%] bg-[#F4F4F4] flex-col justify-center lg:w-35Pc">
-                    <h3 class="font-BogsHeadline uppercase mb-5 lg:text-2xl xl:text-3xl 2xl:text-5xl  hidden lg:block">Your BOGS will go on. <br> And on. And on.</h3>
-                    
-                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">Our REUSE A BOOT program keeps our products out of landfill and supports some amazing organizations.</p>
-                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">When you’re done with your BOGS, send them to us.  (We’ll pay for shipping!)  If they still have love to give, we’ll clean them up and send them to an outdoor education non-profit.   If they’ve reached their end of life, we’ll work with our partner, Recircled, to recycle your old boots into something new.</p>
-                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">Thanks for helping us reduce our bootprint.</p>
+                    <h3 class="font-BogsHeadline uppercase mb-5 lg:text-2xl xl:text-3xl 2xl:text-5xl  hidden lg:block">
+                        Your BOGS will go on. <br> And on. And on.</h3>
+
+                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">Our REUSE
+                        A BOOT program keeps our products out of landfill and supports some amazing organizations.</p>
+                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">When
+                        you’re done with your BOGS, send them to us. (We’ll pay for shipping!) If they still have love
+                        to give, we’ll clean them up and send them to an outdoor education non-profit. If they’ve
+                        reached their end of life, we’ll work with our partner, Recircled, to recycle your old boots
+                        into something new.</p>
+                    <p class="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg 2xl:text-2xl mb-6 lg:mb-5">Thanks
+                        for helping us reduce our bootprint.</p>
                     <a href="#"
-                    class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Learn More</a>
+                        class="shop__btn inline-block text-center text-xl lg:text-shop__btnFontSize font-FrontPage uppercase w-watchVideoBtn-sm lg:w-watchVideoBtn h-shop__btnHeight--sm md:h-shop__btnHeight leading-shop__btnLineHeight--sm md:leading-shop__btnLineHeight bg-black text-white rounded-shop__btnRounded  border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Learn
+                        More</a>
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="fixed top-0 w-full h-full bg-black bg-opacity-50 hidden overflow-auto z-50" id="video-modal">
+        <div class="h-screen mx-auto p-4 rounded shadow-md max-w-full lg:max-w-75pc">
+            <button class="text-white text-xl hover:text-gray-600 focus:outline-none p-2 absolute right-1 top-1"
+                id="close-modal">
+                &times;
+            </button>
+            <iframe id="video-iframe" class="w-full h-full" frameborder="0" allow="autoplay"></iframe>
+        </div>
     </div>
 
     <div class="mt-16 h-16 text-lg capitalize text-center font-bold bg-[#e7e7e7] font-TradeGothic_bold leading-64">
         Winter Boots, Rain Boots & Farm Boots | BOGS Footwear
     </div>
 
-
-   <!-- Footer -->
-
-   <footer class="bg-black" aria-labelledby="footer-heading">
-    <div class="inner__footer max-w-bogs mx-auto">
-        <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="px-5 pb-8 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
-            <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
-                <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
-                    <div class="md:grid md:grid-cols-1 md:gap-8">
-                        <div>
-                            <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
-                            <ul role="list" class="mt-6 space-y-2">
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Sizing
-                                        Info</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Store
-                                        Locator</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Start A
-                                        Return</a>
-                                </li>
-                            </ul>
+    <!-- Footer -->
+    <footer class="bg-black" aria-labelledby="footer-heading">
+        <div class="inner__footer max-w-bogs mx-auto">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="px-5 pb-8 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
+                <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
+                    <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Sizing
+                                            Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Store
+                                            Locator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Start A
+                                            Return</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
+                                            Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-white hover:opacity-50">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Personal
+                                            Information Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Notice at
+                                            Point of Collection Policy</a>
+                                    </li>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
+                                            Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">BOGS Women's
+                                            Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                            Waterproof Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                            Waterproof Shoes</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="md:grid md:grid-cols-1 md:gap-8">
-                        <div>
-                            <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
-                            <ul role="list" class="mt-6 space-y-2">
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
-                                        Use</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Privacy
-                                        Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="text-sm leading-6 text-white hover:opacity-50">Accessibility</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Personal
-                                        Information Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Notice at
-                                        Point of Collection Policy</a>
-                                </li>
-                        </div>
-                    </div>
-                    <div class="md:grid md:grid-cols-1 md:gap-8">
-                        <div>
-                            <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
-                            <ul role="list" class="mt-6 space-y-2">
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
-                                        Boots</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">BOGS Women's
-                                        Boots</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
-                                        Waterproof Boots</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
-                                        Waterproof Shoes</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="hidden xl:block"></div>
+                    <div class="mt-4 mb-10 sm:mt-10 sm:mb-0 order-first md:order-last xl:mt-0">
+                        <h3 class="text-lg font-semibold leading-6 text-white">Stay Connected</h3>
+
+                        <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
+                            <!-- <label for="email-address" class="sr-only">Email address</label> -->
+                            <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                                class="w-full h-12 lg:h-14 rounded-full border-0 bg-white outline-none px-6 pt-1 text-lg placeholder:text-black"
+                                placeholder="Enter Email Address">
+                            <input type="tel" name="phone" id="phone" autocomplete="phone" required
+                                class="mt-3 w-full h-12 lg:h-14 rounded-full border-0 outline-none bg-white px-6 pt-1 text-lg placeholder:text-black"
+                                placeholder="Enter Phone Number">
+                            <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
+                                <button type="submit"
+                                    class="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+                            </div>
+
+                        </form>
+                        <p class="mt-2 text-sm leading-6 text-white">*By clicking on the arrow you are signing up for
+                            text and you agree to receive automated recurring marketing messages (including cart
+                            reminders) from BOGS Footwear and accept the Terms & Privacy Policy.</p>
                     </div>
                 </div>
-                <div class="hidden xl:block"></div>
-                <div class="mt-4 mb-10 sm:mt-10 sm:mb-0 order-first md:order-last xl:mt-0">
-                    <h3 class="text-lg font-semibold leading-6 text-white">Stay Connected</h3>
-
-                    <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
-                        <!-- <label for="email-address" class="sr-only">Email address</label> -->
-                        <input type="email" name="email-address" id="email-address" autocomplete="email" required
-                            class="w-full h-12 lg:h-14 rounded-full border-0 bg-white outline-none px-6 pt-1 text-lg placeholder:text-black"
-                            placeholder="Enter Email Address">
-                        <input type="tel" name="phone" id="phone" autocomplete="phone" required
-                            class="mt-3 w-full h-12 lg:h-14 rounded-full border-0 outline-none bg-white px-6 pt-1 text-lg placeholder:text-black"
-                            placeholder="Enter Phone Number">
-                        <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
-                            <button type="submit"
-                                class="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
-                        </div>
-
-                    </form>
-                    <p class="mt-2 text-sm leading-6 text-white">*By clicking on the arrow you are signing up for
-                        text and you agree to receive automated recurring marketing messages (including cart
-                        reminders) from BOGS Footwear and accept the Terms & Privacy Policy.</p>
+                <div class="pt-8">
+                    <p class="text-xs leading-5 text-white">&copy; 2024 Bogsfootwear.com, All rights reserved.</p>
                 </div>
-            </div>
-            <div class="pt-8">
-                <p class="text-xs leading-5 text-white">&copy; 2024 Bogsfootwear.com, All rights reserved.</p>
             </div>
         </div>
-    </div>
 
-</footer>
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    </footer>
+
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>

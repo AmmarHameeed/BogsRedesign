@@ -27,6 +27,19 @@ $(document).ready(function () {
     document.getElementById("mobile__menu").classList.remove("opened");
   })
 
+  $(".video__item").click(function() {
+    var videoUrl = $(this).data("video-url");
+    $("#video-iframe").attr("src", videoUrl+"?rel=0&autoplay=1&modestbranding=1&muted=0&showinfo=0");
+    $("#video-modal").removeClass("hidden");
+  });
+
+  $("#close-modal").click(function() {
+    $("#video-modal").addClass("hidden");
+    $("#video-iframe").attr("src", "");
+    // You can optionally reset the iframe source here:
+    // $("#video-iframe").attr("src", "");
+  });
+
   // 4 SLIDES SWIPER
   const swiper = new Swiper(".featured__products__swiper", {
     // Optional parameters
