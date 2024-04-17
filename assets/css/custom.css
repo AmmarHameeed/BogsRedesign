@@ -56,7 +56,7 @@ font-style: normal;
   transition:left .25s ease-in-out;
 }
 #mobileMenu__overlay{
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 134px;
   right:0;
@@ -65,13 +65,14 @@ font-style: normal;
     width: 100%;
     opacity: 0;
     transition: opacity .75s ease-in-out;
-    z-index: 9;
+    z-index: -1;
 }
 #mobile__menu.opened{
   left: 0;
 }
 #mobile__menu.opened + #mobileMenu__overlay{
   /* display: block; */
+  z-index: 9;
   opacity: 1;
 }
 

@@ -71,6 +71,7 @@ tailwind.config = {
                 'topCategory_Heading': '23px',
                 'shop__btnLineHeight': '42px',
                 'shop__btnLineHeight--sm': '34px',
+                '26': '26px',
                 '32': '32px',
                 '40': '40px',
                 '44': '44px',
