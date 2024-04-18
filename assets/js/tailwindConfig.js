@@ -23,6 +23,7 @@ tailwind.config = {
                 '23': '23px',
                 '50': '50px',
                 '3.25xl': '32px',
+                '3.5xl': '34px',
                 '7.5xl': '84px',
                 'xxs': '10px',
                 // 'influencer__section__heading': '1.7vw',

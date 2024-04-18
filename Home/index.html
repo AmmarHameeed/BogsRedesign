@@ -865,7 +865,7 @@
                             <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic ultra mid</h6>
                             <p class="text-xxs md:text-sm">Men’s Waterproof Insulated Boots</p>
                             <div>
-                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold ml-2.5">$160</span>
+                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
                             </div>
                         </div>
                     </div>
@@ -876,7 +876,7 @@
                             <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic high</h6>
                             <p class="text-xxs md:text-sm">Men’s Insulated Waterproof Work Boots</p>
                             <div>
-                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold ml-2.5">$160</span>
+                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
                             </div>
                         </div>
                     </div>
@@ -887,7 +887,7 @@
                             <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie Chelsea II</h6>
                             <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
                             <div>
-                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold ml-2.5">$160</span>
+                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
                             </div>
                         </div>
                     </div>
@@ -898,7 +898,7 @@
                             <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie chelsea II</h6>
                             <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
                             <div>
-                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold ml-2.5">$160</span>
+                                <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
                             </div>
                         </div>
                     </div>
@@ -1021,38 +1021,100 @@
                     class="btn btn-sm btn-circle border border-black absolute hover:opacity-100 right-5 top-5 h-6 w-6 min-h-6 leading-26 bg-transparent hover:border-black  hover:bg-transparent">✕</button>
             </form>
             <div class="modal__header flex items-center">
-                <img class="max-w-[45px]" src="../assets/images/global/bogs-ring-logo.svg" />
-                <span class="ml-7 text-2xl capitalize">Added to bag</span>
+                <img class="max-w-[35px] md:max-w-[45px]" src="../assets/images/global/bogs-ring-logo.svg" />
+                <span class="ml-3 md:ml-7 text-17 md:text-2xl capitalize">Added to bag</span>
             </div>
 
-            <div class="modal__content flex mt-20">
-                <div class="w-65Pc flex relative mr-[5%]">
-                    <img class="max-w-[215px] rounded-lg" src="../assets/images/home/addedToCart.jpg" />
-                    <div class="flex flex-col px-7 py-16">
-                        <h6 id="" class="text-lg font-TradeGothic_bold">Men’s Boseman Tall</h6>
-                        <p class="text-lg text-cart__secondary">Size – <span id="">10</span></p>
-                        <p class="text-lg text-cart__secondary">Color – <span id="">Black</span></p>
-
-                        <div class="mt-16 flex items-center">
-                            <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">-</button>
-                            <span class="mx-5 text-15 mt-1.5">1</span>
-                            <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">+</button>
-
-                            <span id="actualPrice" class="line-through text-cart__secondary ml-10 mr-4 text-base">180</span>
-                            <span id="discountedPrice" class="text-base font-TradeGothic_bold">$160</span>
+            <div class="modal__content mt-11 md:mt-20">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-65Pc flex relative mr-[5%]">
+                        <img class="max-w-[130px] md:max-w-[215px] rounded-lg" src="../assets/images/home/addedToCart.jpg" />
+                        <div class="flex flex-col px-7 pt-7 pb-1 md:py-16">
+                            <h6 id="" class="text-15 md:text-lg font-TradeGothic_bold">Men’s Boseman Tall</h6>
+                            <p class="text-15 md:text-lg text-cart__secondary">Size – <span id="">10</span></p>
+                            <p class="text-15 md:text-lg text-cart__secondary">Color – <span id="">Black</span></p>
+                            <p class="md:hidden"><span id="actualPrice" class="line-through text-15 text-cart__secondary mr-4 md:text-base">180</span>
+                                <span id="discountedPrice" class="text-15 md:text-base font-TradeGothic_bold">$160</span></p>
+    
+                            <div class="mt-10 md:mt-16 flex items-center">
+                                <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">-</button>
+                                <span class="mx-5 text-15 mt-1.5">1</span>
+                                <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">+</button>
+    
+                                <span id="actualPrice" class="hidden lg:block line-through text-15 text-cart__secondary ml-10 mr-4 md:text-base">180</span>
+                                <span id="discountedPrice" class="hidden lg:block text-15 md:text-base font-TradeGothic_bold">$160</span>
+                            </div>
                         </div>
+                        <a class="absolute -top-2 md:top-2 right-2 text-15 text-cart__secondary hover:underline hover:cursor-pointer">Remove</a>
                     </div>
-                    <a class="absolute top-2 right-2 text-15 text-cart__secondary hover:underline hover:cursor-pointer">Remove</a>
+                    <div class="w-full md:w-35Pc mt-9 md:mt-0">
+                        <div class="flex justify-between">
+                            <span class="text-15 md:text-23">Subtotal</span>
+                            <span class="text-15 md:text-23">$<span id="item__price" class="mr-2">315</span>USD</span>
+                        </div>
+    
+                        <a class="block w-full h-12 mt-6 md:mt-14 text-xl md:text-2xl text-center bg-black text-white rounded-3xl leading-11 cursor-pointer border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Checkout (<span id="">2</span>)</a>
+    
+                        <a class="text-15 md:text-lg text-center block capitalize mt-4 md:mt-6 hover:underline hover:cursor-pointer">Continue shopping </a>
+                    </div>
                 </div>
-                <div class="w-35Pc">
-                    <div class="flex justify-between">
-                        <span class="text-23">Subtotal</span>
-                        <span class="text-23">$<span id="item__price" class="">315</span></span>
+                
+
+                <!-- Suggested boots module inside cart -->
+                <div class="mt-8 md:mt-36">
+                    <h3 class="capitalize text-xl md:text-3.5xl mb-4 md:mb-11">You may also like</h3>
+                    <div class="swiper featured__products__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper pb-5">
+                            <!-- Slides -->
+        
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-3xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct01.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic ultra mid</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Waterproof Insulated Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-3xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct02.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic high</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Insulated Waterproof Work Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-3xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct03.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie Chelsea II</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-3xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct04.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie chelsea II</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-
-                    <a class="block w-full h-12 mt-14 text-center bg-black text-white rounded-3xl leading-11 cursor-pointer border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Checkout (<span id="">2</span>)</a>
-
-                    <a class="text-lg text-center block capitalize mt-6 hover:underline hover:cursor-pointer">Continue shopping </a>
                 </div>
             </div>
 
