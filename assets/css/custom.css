@@ -164,6 +164,18 @@ font-style: normal;
 /* Swiper Styles END */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1921px) {
   .technology__heading{
     font-size: 83px;
@@ -173,3 +185,6 @@ font-style: normal;
   }
 }
 
+
+/* for flex item 3 */
+/* flex: 0 0 33.3333%; */
