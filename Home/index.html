@@ -126,7 +126,8 @@
                             </div>
                         </div>
 
-                        <button type="button"
+                        
+                        <button type="button" onclick="cart__modal.showModal()"
                             class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white focus:outline-none focus:ring-0 focus:ring-none">
                             <span class="absolute -inset-1.5"></span>
                             <span class="sr-only">View cart</span>
@@ -136,16 +137,6 @@
                                     d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
                         </button>
-                        <!-- <button type="button" onclick="cart__modal.showModal()"
-                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white focus:outline-none focus:ring-0 focus:ring-none">
-                            <span class="absolute -inset-1.5"></span>
-                            <span class="sr-only">View cart</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                            </svg>
-                        </button> -->
 
                         <button type="button"
                             class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden  focus:outline-none"
@@ -1023,7 +1014,6 @@
         </div>
     </div>
 
-    <!-- <button class="btn" onclick="cart__modal.showModal()">open modal</button> -->
     <dialog id="cart__modal" class="modal">
         <div class="modal-box rounded-none w-11/12 max-w-5xl">
             <form method="dialog">
@@ -1032,25 +1022,27 @@
             </form>
             <div class="modal__header flex items-center">
                 <img class="max-w-[45px]" src="../assets/images/global/bogs-ring-logo.svg" />
-                <span class="ml-7 text-2xl capitalize">Added to bogs</span>
+                <span class="ml-7 text-2xl capitalize">Added to bag</span>
             </div>
 
             <div class="modal__content flex mt-20">
-                <div class="w-65Pc">
-                    <img />
-                    <div class="flex flex-column">
-                        <h6></h6>
-                        <span></span>
-                        <span></span>
-                        <div>
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
+                <div class="w-65Pc flex relative mr-[5%]">
+                    <img class="max-w-[215px] rounded-lg" src="../assets/images/home/addedToCart.jpg" />
+                    <div class="flex flex-col px-7 py-16">
+                        <h6 id="" class="text-lg font-TradeGothic_bold">Men’s Boseman Tall</h6>
+                        <p class="text-lg text-cart__secondary">Size – <span id="">10</span></p>
+                        <p class="text-lg text-cart__secondary">Color – <span id="">Black</span></p>
 
-                            <span>180</span>
-                            <span>$160</span>
+                        <div class="mt-16 flex items-center">
+                            <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">-</button>
+                            <span class="mx-5 text-15 mt-1.5">1</span>
+                            <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">+</button>
+
+                            <span id="actualPrice" class="line-through text-cart__secondary ml-10 mr-4 text-base">180</span>
+                            <span id="discountedPrice" class="text-base font-TradeGothic_bold">$160</span>
                         </div>
                     </div>
+                    <a class="absolute top-2 right-2 text-15 text-cart__secondary hover:underline hover:cursor-pointer">Remove</a>
                 </div>
                 <div class="w-35Pc">
                     <div class="flex justify-between">
@@ -1059,6 +1051,8 @@
                     </div>
 
                     <a class="block w-full h-12 mt-14 text-center bg-black text-white rounded-3xl leading-11 cursor-pointer border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Checkout (<span id="">2</span>)</a>
+
+                    <a class="text-lg text-center block capitalize mt-6 hover:underline hover:cursor-pointer">Continue shopping </a>
                 </div>
             </div>
 

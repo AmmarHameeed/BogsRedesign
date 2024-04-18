@@ -8,6 +8,7 @@ tailwind.config = {
                 'bogsGray': '#f8f8f8',
                 'innerText': '#666666',
                 'influencer__text': '#252525',
+                'cart__secondary': '#ADADAD',
             },
             fontSize: {
                 '1750Max_subHeading': '2.1vw',
@@ -17,6 +18,7 @@ tailwind.config = {
                 // 'technologyHeading': '4.35vw',
                 // 'technologySubheading': '1.25vw',
                 '13': '13px',
+                '15': '15px',
                 '17': '17px',
                 '23': '23px',
                 '50': '50px',
