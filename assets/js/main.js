@@ -1,9 +1,9 @@
 // Add class to the body when scrolling
 $(window).bind("scroll load", function () {
-  console.log("Scrolling")
+  // console.log("Scrolling")
   var addClassNow = $(".mega__menu").offset().top;
   if (addClassNow > 58) {
-    console.log("Ifffff")
+    // console.log("Ifffff")
     $("body").addClass("scrolling-body");
     // console.log(addClassNow);
   } else {
@@ -17,6 +17,27 @@ $(window).bind("scroll load", function () {
 $(document).ready(function () {
   console.log("Page loaded successfully");
 
+ // Toggling the mobile menu closing and opening
+  $("input[name='mobileMenuAccordion']").click(function() {
+    // Get the storedValue
+    var previousValue = $(this).data('storedValue');
+    // if previousValue = true then
+    //     Step 1: toggle radio button check mark.
+    //     Step 2: save data-StoredValue as false to indicate radio button is unchecked.
+    if (previousValue) {
+      $(this).prop('checked', !previousValue);
+      $(this).data('storedValue', !previousValue);
+    }
+    // If previousValue is other than true
+    //    Step 1: save data-StoredValue as true to for currently checked radio button.
+    //    Step 2: save data-StoredValue as false for all non-checked radio buttons. 
+    else{
+      $(this).data('storedValue', true);
+      $("input[name='mobileMenuAccordion']:not(:checked)").data("storedValue", false);
+    }
+  });
+
+  // Setting the height of the mobile menu according to the viewport's height
   var screenHeightOnLoad = $("html").height();
   console.log("->",screenHeightOnLoad)
   var minusHeight = 261;

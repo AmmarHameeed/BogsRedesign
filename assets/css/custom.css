@@ -122,6 +122,9 @@ body.scrolling-body .mega__menu .filter__mobile__button{
   z-index: 98;
   opacity: 1;
 }
+#mobile__menu .collapse-plus>.collapse-title:after{
+  top: 6px;
+}
 
 .close__icon{
     width: 30px;
