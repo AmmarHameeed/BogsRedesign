@@ -37,6 +37,41 @@ font-weight: normal;
 font-style: normal;
 }
 
+body .mega__menu{
+  transition: position 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53), transform 0.25s linear;
+}
+body.scrolling-body .mega__menu{
+  transform: translateY(-15px);
+}
+body.scrolling-body .mega__menu nav{
+  padding-bottom: 7px;
+}
+body.scrolling-body .mega__menu .word__logo{
+  transform: translateY(-200px);
+  transition: transform 0.2s linear;
+}
+.menu__item{
+  /* transition: font-size 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53); */
+}
+body.scrolling-body .mega__menu .logo__navbar {
+  position: relative;
+  min-width: 189px;
+}
+body.scrolling-body .mega__menu .mega-menu-dropdown__reset {
+  transform: translateY(-15px);
+}
+
+.ring__logo{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+body.scrolling-body .mega__menu .ring__logo{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .mega-menu-dropdown__reset{
   transform: none !important;
   top: 84px !important;
@@ -163,11 +198,103 @@ font-style: normal;
 
 /* Swiper Styles END */
 
+#filter__sidebar{
+  /* left: -30%; */
+  -moz-transition:all 100ms ease-in;
+    -webkit-transition:all 100ms ease-in;
+    -o-transition:all 100ms ease-in;
+    transition:all 100ms ease-in;
+}
+
+#main__content{
+  /* width: 100%; */
+  -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+
+#categoryPage__module.opened{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#categoryPage__module.opened #filter__sidebar{
+  /* left: 0; */
+}
+
+#categoryPage__module.opened #main__content{
+  width: calc(100% - 32%);
+  margin-right: 0;
+}
+#categoryPage__module.opened #main__content > div{
+  flex: 0 0 30.3333%;
+}
+
+
 
 /* #search::placeholder {
   line-height: 90px;
   } */
+/* Custom Radio START */
+.sq-radio {
+  display: block;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* Hide the browser's default radio button */
+.sq-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.sq-radio:hover input ~ .checkmark {
+  background-color: #241d25;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.sq-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.sq-radio .checkmark:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #241d25;
+}
+/* Custom Radio END */
 
 
 
