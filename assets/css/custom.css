@@ -58,7 +58,7 @@ body.scrolling-body .mega__menu .logo__navbar {
   min-width: 189px;
 }
 body.scrolling-body .mega__menu .mega-menu-dropdown__reset {
-  transform: translateY(-15px);
+  transform: translateY(-15px) !important;
 }
 
 .ring__logo{
