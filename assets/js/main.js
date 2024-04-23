@@ -67,12 +67,12 @@ $(document).ready(function () {
       // when window width is >= 320px
       768: {
         slidesPerView: 2,
-        spaceBetween: 25,
+        spaceBetween: 15,
       },
 
       1024: {
         slidesPerView: 4,
-        spaceBetween: 60,
+        spaceBetween: 30,
       },
     },
   });

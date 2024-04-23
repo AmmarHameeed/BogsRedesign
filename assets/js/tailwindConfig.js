@@ -69,7 +69,7 @@ tailwind.config = {
                 '5.5': "1.4rem"
             },
             lineHeight: {
-                '1750Max_Heading': '7.5vw',
+                '1750Max_Heading': '6.8vw',
                 '1750Max_subHeading': '45px',
                 'topCategory_Heading': '23px',
                 'shop__btnLineHeight': '42px',
