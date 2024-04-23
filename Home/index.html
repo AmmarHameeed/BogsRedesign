@@ -20,14 +20,15 @@
 
 <body class="font-TradeGothic_std">
 
-    <nav class="top__nav bg-bogsGray lg:bg-black">
+    <nav class="top__nav sticky top-0 z-50 md:relative bg-bogsGray lg:bg-black">
         <div class="max-w-bogs mx-5 min-[1750px]:mx-auto  lg:mx-12">
             <div class="">
                 <div class="relative flex h-14 items-center justify-between">
                     <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
                         <!-- Mobile menu button-->
-                        <a href="" class="flex lg:hidden items-center space-x-3 rtl:space-x-reverse">
-                            <img src="../assets/images/global/bogs-logo-dark.svg" class="max-w-[120px]" alt="BOGs Logo" />
+                        <a href="" class="flex lg:hidden items-center rtl:space-x-reverse">
+                            <img src="../assets/images/global/bogs-ring-logo.svg" class="h-10 ring__logo absolute" alt="BOGs Logo" />
+                            <img src="../assets/images/global/bogs-logo-dark.svg" class="max-w-[120px] word__logo a" alt="BOGs Logo" />
                         </a>
                     </div>
                     <div class="hidden lg:flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
@@ -170,7 +171,7 @@
     </nav>
     <!-- Mobile Mega Menu -->
 
-    <div class=" absolute z-40 w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
+    <div class=" absolute z-[99] w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
         role="menu" id="mobile__menu" aria-labelledby="openmenu">
 
         <nav
@@ -243,7 +244,7 @@
                             <div class="mobile__nav-row">
                                 <h4 class="text-lg text-black font-medium">Seamless</h4>
                                 <div>
-                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG.jpg" />
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -312,7 +313,7 @@
                             <div class="mobile__nav-row">
                                 <h4 class="text-lg text-black font-medium">Seamless</h4>
                                 <div>
-                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG.jpg" />
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -381,7 +382,7 @@
                             <div class="mobile__nav-row">
                                 <h4 class="text-lg text-black font-medium">Seamless</h4>
                                 <div>
-                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG.jpg" />
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
                                 </div>
                             </div>
                         </div>
@@ -398,7 +399,7 @@
     <div id="mobileMenu__overlay" class="lg:hidden"></div>
 
     <!-- Desktop Mega Menu -->
-    <div class="mega__menu sticky top-0 bg-bogsGray shadow-md z-40">
+    <div class="mega__menu sticky top-[56px] md:top-0 bg-bogsGray shadow-md z-40">
         <nav class="py-5.5 mx-5  max-w-bogs lg:mx-12 min-[1750px]:mx-auto">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-full">
                 <a href="" class="logo__navbar hidden lg:flex items-center rtl:space-x-reverse">
@@ -831,7 +832,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full mt-5 flex justify-between lg:hidden">
+                <div class="w-full mt-5 flex justify-between lg:hidden filter__mobile__button">
                     <a
                     class="w-32Pc h-[40px] leading-[40px] border-1.5 border-black rounded-full inline-block text-base text-center">Men</a>
                 <a
@@ -845,7 +846,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero__section" class="flex flex-col-reverse mx-5 md:flex-row md:mx-0">
+    <section id="hero__section" class="flex flex-col-reverse mt-2.5 md:mt-0 mx-5 md:flex-row md:mx-0">
         <div class="hero__left relative p-[7%_7%_9%_7%] w-full mt-Minus50px md:w-1/2 md:p-0 md:mt-0 bg-[#E7AC49]">
             <div class="hero__text__overlay md:absolute top-1/2 left-[12.5%] md:-translate-y-1/2">
                 <p

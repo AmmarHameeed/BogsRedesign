@@ -46,17 +46,14 @@ body.scrolling-body .mega__menu{
 body.scrolling-body .mega__menu nav{
   padding-bottom: 7px;
 }
-body.scrolling-body .mega__menu .word__logo{
+body.scrolling-body .word__logo{
   transform: translateY(-200px);
   transition: transform 0.2s linear;
 }
 .menu__item{
   /* transition: font-size 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53); */
 }
-body .mega__menu .logo__navbar {
-  position: relative;
-  min-width: 189px;
-}
+
 body.scrolling-body .mega__menu .mega-menu-dropdown__reset {
   transform: translateY(-15px) !important;
 }
@@ -67,9 +64,18 @@ body.scrolling-body .mega__menu .mega-menu-dropdown__reset {
   transition: transform 0.2s linear, opacity 0.2s linear;
 }
 
-body.scrolling-body .mega__menu .ring__logo{
+body.scrolling-body  .ring__logo{
   opacity: 1;
   transform: translateY(0px);
+}
+/* Mobile styles */
+body.scrolling-body .mega__menu .filter__mobile__button{
+  /* position: absolute;
+  top: -200px; */
+  margin-top: -150px;
+  opacity: 0;
+  transition: margin-top 0.2s linear;
+  /* transform: translateY(-200px); */
 }
 
 .mega-menu-dropdown__reset{
@@ -77,6 +83,12 @@ body.scrolling-body .mega__menu .ring__logo{
   top: 84px !important;
 }
 
+@media screen and (min-width:768px) {
+  body .mega__menu .logo__navbar {
+    position: relative;
+    min-width: 189px;
+  }
+}
 
 @media screen and (max-width:768px){
   .mega-menu-dropdown__reset{
@@ -107,7 +119,7 @@ body.scrolling-body .mega__menu .ring__logo{
 }
 #mobile__menu.opened + #mobileMenu__overlay{
   /* display: block; */
-  z-index: 9;
+  z-index: 98;
   opacity: 1;
 }
 
