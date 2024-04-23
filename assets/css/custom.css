@@ -53,7 +53,7 @@ body.scrolling-body .mega__menu .word__logo{
 .menu__item{
   /* transition: font-size 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53); */
 }
-body.scrolling-body .mega__menu .logo__navbar {
+body .mega__menu .logo__navbar {
   position: relative;
   min-width: 189px;
 }
