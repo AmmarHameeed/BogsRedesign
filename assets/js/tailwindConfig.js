@@ -41,6 +41,7 @@ tailwind.config = {
                 '110px': '110px',
                 'watchVideoBtn': '180px',
                 'watchVideoBtn-sm': '130px',
+                '30Pc': '30%',
                 '32Pc': '32%',
                 '35Pc': '35%',
                 '49-1/2': '49%',

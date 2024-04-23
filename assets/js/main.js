@@ -1,3 +1,19 @@
+// Add class to the body when scrolling
+$(window).bind("scroll load", function () {
+  console.log("Scrolling")
+  var addClassNow = $(".mega__menu").offset().top;
+  if (addClassNow > 58) {
+    console.log("Ifffff")
+    $("body").addClass("scrolling-body");
+    // console.log(addClassNow);
+  } else {
+    // console.log("elseee")
+    $("body").removeClass("scrolling-body");
+  }
+});
+
+
+
 $(document).ready(function () {
   console.log("Page loaded successfully");
 
@@ -39,6 +55,13 @@ $(document).ready(function () {
     // You can optionally reset the iframe source here:
     // $("#video-iframe").attr("src", "");
   });
+
+  $("#filter__btn").click(function() {
+    $("#categoryPage__module").toggleClass("opened");
+    // $("#filter__sidebar").css("left", "0");
+  });
+
+
 
   // 4 SLIDES SWIPER
   const swiper = new Swiper(".featured__products__swiper", {
