@@ -3,11 +3,8 @@ $(window).bind("scroll load", function () {
   // console.log("Scrolling")
   var addClassNow = $(".mega__menu").offset().top;
   if (addClassNow > 58) {
-    // console.log("Ifffff")
     $("body").addClass("scrolling-body");
-    // console.log(addClassNow);
   } else {
-    // console.log("elseee")
     $("body").removeClass("scrolling-body");
   }
 });
