@@ -1,6 +1,5 @@
 // Add class to the body when scrolling
 $(window).bind("scroll load", function () {
-  // console.log("Scrolling")
   var addClassNow = $(".mega__menu").offset().top;
   if (addClassNow > 58) {
     $("body").addClass("scrolling-body");
@@ -74,11 +73,17 @@ $(document).ready(function () {
     // $("#video-iframe").attr("src", "");
   });
 
-  $("#filter__btn").click(function() {
+  $(".filter__btn").click(function() {
     $("#categoryPage__module").toggleClass("opened");
     // $("#filter__sidebar").css("left", "0");
   });
 
+  $(".closeFilterMenu").on("click", function(){
+    document.getElementById("categoryPage__module").classList.remove("opened");
+  })
+  $("#mobileMenu__overlay--filter").on("click touchmove", function(){
+    document.getElementById("categoryPage__module").classList.remove("opened");
+  })
 
 
   // 4 SLIDES SWIPER

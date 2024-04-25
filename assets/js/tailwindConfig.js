@@ -67,7 +67,8 @@ tailwind.config = {
                 
             },
             spacing: {
-                '5.5': "1.4rem"
+                '5.5': "1.4rem",
+                '30%': "30%"
             },
             lineHeight: {
                 '1750Max_Heading': '6.8vw',
