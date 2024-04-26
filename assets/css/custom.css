@@ -276,6 +276,9 @@ body.scrolling-body .mega__menu .filter__mobile__button {
   background-color: #f8f8f8;
   transition: background-color 0.2s ease-in-out;
 }
+.category__item.have_3d:last-child:hover{
+padding-bottom: 50px;
+}
 /* Filter sidebar custom DESKTOP styles START */
 
 @media screen and (min-width:769px) {
