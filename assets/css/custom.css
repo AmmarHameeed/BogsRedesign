@@ -250,18 +250,18 @@ body.scrolling-body .mega__menu .filter__mobile__button {
 
 #filter__sidebar {
   /* left: -30%; */
-  -moz-transition: all 2s linear;
-  -webkit-transition: all 2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.42s linear;
+  -moz-transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 #main__content {
   /* width: 100%; */
-  -moz-transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 
