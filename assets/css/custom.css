@@ -314,6 +314,10 @@ body.scrolling-body .mega__menu .filter__mobile__button {
     -o-transition: width 0.4s linear;
     transition: width 0.4s linear;
   }
+  .category__item.have_3d:hover{
+    background: #f8f8f8;
+    transition: all 0.2s ease-in;
+  }
 
   .category__item:nth-child(4n) {
     margin-right: 0;
