@@ -201,17 +201,20 @@ body.scrolling-body .mega__menu .filter__mobile__button {
 /* Swiper Styles START */
 
 .featured__products__swiper .swiper-pagination,
+.featured__terrainFilter__swiper .swiper-pagination,
 .featured__actvityFilter__swiper .swiper-pagination {
   bottom: 0 !important;
 }
 
 .featured__products__swiper .swiper-pagination .swiper-pagination-bullet,
+.featured__terrainFilter__swiper .swiper-pagination .swiper-pagination-bullet,
 .featured__actvityFilter__swiper .swiper-pagination .swiper-pagination-bullet {
   background: #000000;
   opacity: 0.3;
 }
 
 .featured__products__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.featured__terrainFilter__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .featured__actvityFilter__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #000000;
   opacity: 1;
