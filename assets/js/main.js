@@ -247,4 +247,34 @@ $(document).ready(function () {
       },
     },
   });
+  const terrainSwiper = new Swiper(".featured__terrainFilter__swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 15,
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
 });

@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Winter Boots, Rain Boots, Farm Boots | BOGS</title>
+        <link href="../assets/images/global/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        
+        <link href="../plugins/daisyui/css/full.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../plugins/swiper/css/swiper-bundle.min.css" />
+    
+        <script src="../plugins/jquery/js/jquery-3.7.1.min.js"></script>
+        <script src="../plugins/tailwind/tailwindcss.com"></script>
+    
+        <link rel="stylesheet" href="../assets/css/custom.css">
+    
+        <script src="../assets/js/tailwindConfig.js"></script>
+    </head>
+
+<body class="font-TradeGothic_std">
+    <nav class="top__nav sticky top-0 z-[999] md:relative bg-bogsGray lg:bg-black">
+        <div class="max-w-bogs mx-5 min-[1750px]:mx-auto  lg:mx-12">
+            <div class="">
+                <div class="relative flex h-14 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+                        <!-- Mobile menu button-->
+                        <a href="" class="flex lg:hidden items-center rtl:space-x-reverse">
+                            <img src="../assets/images/global/bogs-ring-logo.svg" class="h-10 ring__logo absolute" alt="BOGs Logo" />
+                            <img src="../assets/images/global/bogs-logo-dark.svg" class="max-w-[120px] word__logo" alt="BOGs Logo" />
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+                        <div class="hidden sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#" class="text-white rounded-md px-3 py-2 pl-0 text-sm font-medium"
+                                    aria-current="page">Help</a>
+                                <a href="#"
+                                    class="text-white hover:text-white rounded-md px-3 py-2 text-sm font-medium">Free
+                                    Shipping Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:ml-6 sm:pr-0">
+                        <div class="ml-3">
+                            <button
+                                class="relative rounded-full p-1 flex text-black lg:text-white lg:hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                type="button" data-dropdown-toggle="country_dropdown">
+                                <span>US</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                                id="country_dropdown">
+                                <ul class="py-1" aria-labelledby="country_dropdown">
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">US</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">CA</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">AU</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <button
+                                class="relative rounded-full p-1 flex text-black lg:text-white lg:hover:text-white focus:outline-none focus:ring-0 focus:ring-none"
+                                type="button" data-dropdown-toggle="user_dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div class="hidden bg-white min-w-150 text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                                id="user_dropdown">
+                                <ul class="py-1" aria-labelledby="user_dropdown">
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Featured</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sale</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign
+                                            out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                        <button type="button" onclick="cart__modal.showModal()"
+                            class="relative rounded-full ml-3 p-1 pr-0 flex text-black lg:text-white focus:outline-none focus:ring-0 focus:ring-none">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">View cart</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                            </svg>
+                        </button>
+
+                        <button type="button"
+                            class="openMobileMenu relative inline-flex items-center justify-center rounded-md p-2 ml-2 text-black lg:hidden  focus:outline-none"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <!--
+                        Icon when menu is closed.
+            
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                            <!--
+                        Icon when menu is open.
+            
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Mega Menu -->
+
+    <div class=" absolute z-[99] w-75pc transition-transform h-screen duration-500 flex inset-y-0 transform-none opacity-100 lg:hidden"
+        role="menu" id="mobile__menu" aria-labelledby="openmenu">
+
+        <nav
+            class="relative block  text-black transition-all duration-500 bg-bogsGray box-border overflow-auto flex flex-col w-full p-5 pt-11 transform-none opacity-100">
+            <div class=" absolute top-1.5 right-2.5 z-10 closeMobileMenu">
+                <i class="close__icon"></i>
+            </div>
+            <!-- <h2 class="text-3xl">Menu</h2> -->
+            <div class="join join-vertical w-full">
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
+                        Men
+                    </div>
+                    <div class="collapse-content">
+                        <div class="text-innerText">
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Shop</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Outdoor</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Work</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row">
+                                <h4 class="text-lg text-black font-medium">Seamless</h4>
+                                <div>
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl border-b border-black px-0 py-2 font-medium">
+                        Women
+                    </div>
+                    <div class="collapse-content">
+                        <div class="text-innerText">
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Shop</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Outdoor</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Work</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row">
+                                <h4 class="text-lg text-black font-medium">Seamless</h4>
+                                <div>
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse mb-2 join-item collapse-plus">
+                    <input type="radio" name="mobileMenuAccordion" class="min-h-0" />
+                    <div class="collapse-title min-h-0 text-xl px-0 py-2 border-b border-black font-medium">
+                        Kids
+                    </div>
+                    <div class="collapse-content">
+                        <div class="text-innerText">
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Shop</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Outdoor</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row mb-5">
+                                <h4 class="text-lg text-black font-medium">Work</h4>
+                                <ul role="list" class="mt-1 space-y-4">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                            Arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                            All</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mobile__nav-row">
+                                <h4 class="text-lg text-black font-medium">Seamless</h4>
+                                <div>
+                                    <img class="w-full rounded-lg" src="../assets/images/nav/BG01.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium"
+                    href="#">Work</a>
+                <a class="collapse-title mb-2 text-xl min-h-0 px-0 py-2 border-b border-black font-medium"
+                    href="#">ReUse</a>
+                <a class="collapse-title text-xl min-h-0 px-0 py-2 font-medium" href="#">Sale</a>
+            </div>
+        </nav>
+    </div>
+    <div id="mobileMenu__overlay" class="lg:hidden"></div>
+
+    <!-- Desktop Mega Menu -->
+    <div class="mega__menu sticky top-[56px] md:top-0 bg-bogsGray shadow-md z-[99]">
+        <nav class="py-5.5 mx-5  max-w-bogs lg:mx-12 min-[1750px]:mx-auto">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-full">
+                <a href="" class="logo__navbar hidden lg:flex items-center rtl:space-x-reverse">
+                    <img src="../assets/images/global/bogs-ring-logo.svg" class="h-10 ring__logo" alt="BOGs Logo" />
+                    <img src="../assets/images/global/bogs-logo-dark.svg" class="absolute h-10 word__logo" alt="BOGs Logo" />
+                </a>
+
+                <div id="mega-menu"
+                    class="hidden justify-between items-center w-full xl:text-lg 2xl:text-xl lg:flex lg:w-auto">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+
+                        <li>
+                            <button id="mega-menu-dropdown-button-men" data-dropdown-toggle="mega-menu-dropdown-men"
+                                class="menu__item flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-black border-b border-gray-100 lg:w-auto lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-orange-500 dark:hover:text-blue-500">
+                                Men <svg aria-hidden="true" class="ml-1 w-5 h-5 lg:w-4 lg:h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div id="mega-menu-dropdown-men"
+                                class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
+                                <div
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    <div
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                                        All</a>
+                                                </li>
+                                                                                               
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                                        Arrivals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Socks
+                                                        </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Outdoor</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Snow
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Casual
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Camo
+                                                        Boots</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Work</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Farm
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Work
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Steel
+                                                        Toe Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Garden
+                                                        Boots</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG01.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG02.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG03.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="mega-menu-dropdown-button-women" data-dropdown-toggle="mega-menu-dropdown-women"
+                                class="menu__item flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-black border-b border-gray-100 lg:w-auto lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-orange-500 dark:hover:text-blue-500">
+                                Women <svg aria-hidden="true" class="ml-1 w-5 h-5 lg:w-4 lg:h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div id="mega-menu-dropdown-women"
+                                class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
+                                <div
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    <div
+                                        class="mt-5 mb-5 text-gray-900 pl-12 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                                        All</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                                        Arrivals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Socks
+                                                        </a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Outdoor</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Snow
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Rain
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Casual
+                                                        Boots</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Work</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Work
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Farm
+                                                        Boots</a>
+                                                </li>
+                                                
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Garden Shoes
+                                                        </a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG01.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG02.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG03.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="mega-menu-dropdown-button-kids" data-dropdown-toggle="mega-menu-dropdown-kids"
+                                class="menu__item flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-black border-b border-gray-100 lg:w-auto lg:border-0 lg:hover:text-black lg:p-0 dark:text-black lg:dark:hover:text-orange-500 dark:hover:text-blue-500">
+                                Kids <svg aria-hidden="true" class="ml-1 w-5 h-5 lg:w-4 lg:h-4" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div id="mega-menu-dropdown-kids"
+                                class="mega-menu-dropdown__reset hidden md:absolute w-full z-10  w-auto text-sm bg-bogsGray border-0 shadow-md dark:border-0  dark:bg-bogsGray">
+                                <div
+                                    class="mega-menu-dropdownWrapper max-w-75pc 2xl:max-w-55pc mx-auto grid grid-cols-2 lg:grid-cols-2">
+                                    <div
+                                        class="mt-5 mb-5 pl-12 text-gray-900 border-x-2 dark:text-white grid grid-cols-3 justify-items-start lg:grid-cols-3">
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Shop</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">View
+                                                        All</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Sale</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                                        Arrivals</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Socks</a>
+                                                </li>
+                                               
+
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Kids</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Winter
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Rain
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Outdoor Shoes</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="text-innerText">
+                                            <h4 class="text-lg text-black font-medium">Baby</h4>
+                                            <ul role="list" class="mt-1 space-y-4">
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Winter
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">Rain
+                                                        Boots</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="text-sm leading-6 text-innerText hover:text-orange-500">New
+                                                        Arrivals</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="mt-5 mb-5 ml-5 pr-5 text-gray-900 border-r-2 items-center lg:pb-0 dark:text-white grid gap-8 grid-cols-3 justify-items-center lg:grid-cols-3">
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG01.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG02.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="relative block group" href="#">
+                                            <div class="group relative">
+                                                <img class="w-full max-w-navImage object-cover rounded-lg"
+                                                    src="../assets/images/nav/BG03.jpg" alt="boot picture" />
+                                                <div
+                                                    class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2] group-hover:h-full duration-200">
+                                                    <h1 class="text-sm text-white font-TradeGothic_bold text-center opacity-0 group-hover:opacity-100">
+                                                        Shop <br> New Arrivals</h1>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="menu__item block py-2 pr-4 pl-3 text-black lg:hover:text-blue-600 lg:p-0 dark:text-black-500 lg:dark:hover:text-orange dark:hover:text-orange-500"
+                                aria-current="page">Work</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="menu__item block py-2 pr-4 pl-3 text-black lg:hover:text-blue-600 lg:p-0 dark:black-500 lg:dark:hover:text-orange dark:hover:text-orange-500">ReUse</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="menu__item block py-2 pr-4 pl-3 text-black lg:hover:text-blue-600 lg:p-0 dark:black-500 lg:dark:hover:text-orange dark:hover:text-orange-500">Sale</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-unset flex items-center justify-center lg:px-2 pr-0 lg:justify-end">
+                    <div class="w-full lg:max-w-xs">
+                        <label for="search" class="sr-only">Search</label>
+                        <div class="relative">
+                            <input id="search" name="search"
+                                class="block w-full h-[40px] rounded-full border-1.5 border-black bg-white py-1.5 pt-2 pr-10 pl-3 text-black-900 outline-none placeholder:text-black sm:text-sm sm:leading-6"
+                                placeholder="Search" type="search">
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+                                <svg class="h-5 w-5 text-black-900" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mt-5 flex justify-between lg:hidden filter__mobile__button">
+                    <a
+                    class="w-32Pc h-[40px] leading-[40px] border-1.5 border-black rounded-full inline-block text-base text-center">Men</a>
+                <a
+                    class="w-32Pc h-[40px] leading-[40px] border-1.5 border-black rounded-full inline-block text-base text-center">Women</a>
+                <a
+                    class="w-32Pc h-[40px] leading-[40px] border-1.5 border-black rounded-full inline-block text-base text-center">Kids</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="spaced__container relative">
+        <div class="flex justify-between items-center mt-5 mx-5 lg:mx-12 2xl:max-w-bogs min-[1750px]:mx-auto">
+            <div class="flex flex-col">
+                <div class="text-xs md:text-sm mb-1 text-innerText">
+                    <span>Men's</span>
+                    /
+                    <span>Outdoor</span>
+                </div>
+                <div>
+                    <h2 class="text-xl lg:text-3xl text-innerText">Men's Snow Boots</h2>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <a id="filter__btn" class="filter__btn w-110px inline-block text-center border rounded-3xl text-xl h-10 leading-44 text-innerText cursor-pointer mr-4 hover:bg-black hover:text-white">Filter</a>
+                <a class="w-110px inline-block text-center border rounded-3xl text-xl h-10 leading-44 text-innerText cursor-pointer hover:bg-black hover:text-white">Sort By</a>
+            </div>
+            <div class="block md:hidden">
+                <a class="filter__icon filter__btn"></a>
+            </div>
+        </div>
+
+        <div class="swiper featured__terrainFilter__swiper w-[95%] mt-10 mb-7 lg:mb-14">
+            <div class="swiper-wrapper pb-7">
+                <div class="swiper-slide">
+                    <div class="group relative">
+                        <img class="w-full max-w-navImage object-cover rounded-lg"
+                            src="../assets/images/category/BOGS-TerrainFilter01.jpg" alt="boot picture" />
+                        <div
+                            class="absolute top-0 left-0 w-full flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  h-full">
+                            <h1 class="lg:text-28 text-white font-FrontPage uppercase text-centeropacity-100">
+                                Rough and uneven</h1>
+
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                            <a href="" class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-28 font-FrontPage uppercase text-white bg-black rounded-full hover:bg-white hover:border-2 hover:border-white hover:text-black  opacity-0 group-hover:opacity-100">View</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group relative">
+                        <img class="w-full max-w-navImage object-cover rounded-lg"
+                            src="../assets/images/category/BOGS-TerrainFilter02.jpg" alt="boot picture" />
+                            <div
+                            class="absolute top-0 left-0 w-full flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  h-full">
+                            <h1 class="lg:text-28 text-white font-FrontPage uppercase text-centeropacity-100">
+                                Muddy and rain</h1>
+
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                            <a href="" class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-28 font-FrontPage uppercase text-white bg-black rounded-full hover:bg-white hover:border-2 hover:border-white hover:text-black  opacity-0 group-hover:opacity-100">View</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group relative">
+                        <img class="w-full max-w-navImage object-cover rounded-lg"
+                            src="../assets/images/category/BOGS-TerrainFilter03.jpg" alt="boot picture" />
+                            <div
+                            class="absolute top-0 left-0 w-full flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  h-full">
+                            <h1 class="lg:text-28 text-white font-FrontPage uppercase text-centeropacity-100">
+                                Snow and Ice</h1>
+
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                            <a href="" class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-28 font-FrontPage uppercase text-white bg-black rounded-full hover:bg-white hover:border-2 hover:border-white hover:text-black  opacity-0 group-hover:opacity-100">View</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="group relative">
+                        <img class="w-full max-w-navImage object-cover rounded-lg"
+                            src="../assets/images/category/BOGS-TerrainFilter04.jpg" alt="boot picture" />
+                            <div
+                            class="absolute top-0 left-0 w-full flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  h-full">
+                            <h1 class="lg:text-28 text-white font-FrontPage uppercase text-centeropacity-100">
+                                Indoor and outdoor</h1>
+
+                        </div>
+                        <div
+                            class="absolute top-0 left-0 w-full h-0 flex flex-col rounded-lg justify-center items-center bg-black/[0.2]  group-hover:h-full  duration-200">
+                            <a href="" class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-28 font-FrontPage uppercase text-white bg-black rounded-full hover:bg-white hover:border-2 hover:border-white hover:text-black  opacity-0 group-hover:opacity-100">View</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div id="categoryPage__module" class="mt-3 md:mt-16 md:relative">
+            <div id="filter__sidebar" class="w-[75%] absolute top-0 left-0 md:-left-30% md:w-30Pc h-full bg-bogsGray z-50">
+                <div class="p-5 md:p-[7%_7%_5%_16%] w-full">
+                    <div class=" absolute top-4 right-4 z-10 closeFilterMenu">
+                        <i class="close__icon cursor-pointer"></i>
+                    </div>
+                    <div class="collapse-title min-h-0 text-xl px-0 pl-0 py-2 mb-14 font-medium">
+                        Filters
+                    </div>
+                    <div id="sizeContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-2.5">Size</h6>
+                        <div class="flex flex-wrap">
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">4</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">4</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">6</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">7</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">8</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">9</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">10</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">11</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">12</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">13</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">14</a>
+                            <a class="h-10 md:h-12 leading-10 md:leading-11 text-center text-base text-black mr-2 md:mr-2.5 mb-2 md:mb-2.5 flex-[1_0_calc(32%-10px)] border border-[#b4b4b4] rounded-lg cursor-pointer hover:bg-black hover:text-white">15</a>
+                        </div>
+                    </div>
+                    <!-- //TODO: add the rest of filters here -->
+                    <div id="colorContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-2.5">Color</h6>
+                        <div class="flex flex-wrap">
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-start cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#000000]"></div>
+                                <span class="h-15 ml-3 leading-11 text-center text-xs text-black  cursor-pointer">Black</span>
+                            </div>
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-center cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#415263]"></div>
+                                <span class="h-15 leading-11 text-center text-xs text-black  cursor-pointer">Blue</span>
+                            </div>
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-end cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#5f6037]"></div>
+                                <span class="h-15 mr-2.5 leading-11 text-center text-xs text-black  cursor-pointer">Green</span>
+                            </div>
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-start cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#444444]"></div>
+                                <span class="h-15 ml-3 leading-11 text-center text-xs text-black  cursor-pointer">Gray</span>
+                            </div>
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-center cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#635341]"></div>
+                                <span class="h-15 leading-11 text-center text-xs text-black  cursor-pointer">Brown</span>
+                            </div>
+                            <div class="color__item flex-[1_0_calc(32%-10px)] flex flex-col items-end cursor-pointer">
+                                <div class="h-14 w-14 rounded-full bg-[#af1e1e]"></div>
+                                <span class="h-15 mr-2.5 leading-11 text-center text-xs text-black  cursor-pointer">Red</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="heightContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-8">Height</h6>
+                        <div class="flex flex-col">
+                            <label class="sq-radio text-base leading-32">Low
+                                <input type="radio" name="heightRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Mid
+                                <input type="radio" name="heightRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">High
+                                <input type="radio" name="heightRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                    <div id="tempContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-8">Temp</h6>
+                        <div class="flex flex-col">
+                            <label class="sq-radio text-base leading-32">Cool (Below 30°F)
+                                <input type="radio" name="tempRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Cold (Below 0°F)
+                                <input type="radio" name="tempRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Frigid (Below - 20°F)
+                                <input type="radio" name="tempRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                    <div id="terrainContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-8">Terrain</h6>
+                        <div class="flex flex-col">
+                            <label class="sq-radio text-base leading-32">Indoor / Outdoor
+                                <input type="radio" name="terrainRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Rough / Uneven
+                                <input type="radio" name="terrainRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Muddy / Rain
+                                <input type="radio" name="terrainRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Ice / Snow
+                                <input type="radio" name="terrainRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                    <div id="activitiesContainer" class="mb-8 md:mb-14">
+                        <h6 class="text-xl px-0 font-medium mb-8">Activities</h6>
+                        <div class="flex flex-col">
+                            <label class="sq-radio text-base leading-32">Farm
+                                <input type="radio" name="activitiesRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Garden
+                                <input type="radio" name="activitiesRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Work
+                                <input type="radio" name="activitiesRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="sq-radio text-base leading-32">Hunting
+                                <input type="radio" name="activitiesRadio">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="mobileMenu__overlay--filter" class="lg:hidden"></div>
+            <!-- <div id="main__content" class="flex flex-wrap mx-5 lg:mx-12 2xl:max-w-bogs min-[1750px]:m-auto"> -->
+            <div id="main__content" class="flex flex-wrap mx-5 lg:mx-12 2xl:max-w-bogs min-[1750px]:m-auto">
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-ArcataUrbanChelsea-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Arcata Urban Chelsea</h6>
+                        <p class="text-xxs md:text-sm">Men’s Waterproof Winter Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#bbbbbb] mr-2 text-13 md:text-base lg:text-23 font-TradeGothic_bold line-through">$140</span>
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-Workman17Tall-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Workman 17" Tall</h6>
+                        <p class="text-xxs md:text-sm">Men’s  Insulated Waterproof Boots</p>
+                        <div class="mt-1">
+                            <span class="text-black text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-ClassicHigh-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block " src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Classic High</h6>
+                        <p class="text-xxs md:text-sm">Men’s Insulated Waterproof Work Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-KickerRainChelseaII-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Kicker Rain Chelsea II</h6>
+                        <p class="text-xxs md:text-sm">Men’s Rainboots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-MesaSteelToe-Desktop-Mobile.jpeg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Mesa Steel Toe</h6>
+                        <p class="text-xxs md:text-sm">Men’s Insulated Waterproof Work Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-SauvieChelseaII-Black-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Sauvie Chelsea II</h6>
+                        <p class="text-xxs md:text-sm">Men’s Slip on Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-SauvieChelseaII-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Sauvie Chelsea II</h6>
+                        <p class="text-xxs md:text-sm">Men’s Slip on Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative group-hover:bg-bogsGray mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-StockmanIICompToe-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Stockman II Comp Toe</h6>
+                        <p class="text-xxs md:text-sm">Men’s Work Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category__item have_3d group relative mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-Workman17Tall-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center  group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Classic ultra mid</h6>
+                        <p class="text-xxs md:text-sm">Men’s Waterproof Insulated Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category__item have_3d group relative group-hover:bg-bogsGray mb-10">
+                    <span class="absolute top-2.5 md:top-5 right-2.5 md:right-5 text-sm md:text-lg lg:text-3xl font-TradeGothic_bold">3D</span>
+                    <img class="group-hover:hidden" src="../assets/images/category/BOGS-StockmanIICompToe-Desktop-Mobile.jpeg" alt="boot" />
+                    <img class="hidden group-hover:block" src="../assets/images/category/BOGS-StockmanIICompToe-Side-Desktop-Mobile.jpg" alt="boot" />
+                    <div class="hidden justify-center group-hover:flex">
+                        <a class="flex items-center justify-center h-7 lg:h-10 w-[80px] md:w-[127px] cursor-pointer text-lg lg:text-4xl font-FrontPage uppercase text-white bg-black rounded-full hover:bg-transparent hover:border-2 hover:border-black hover:text-black">View</a>
+                    </div>
+                    <div class="mt-3 md:mt-5 group-hover:hidden">
+                        <h6 class="font-TradeGothic_bold text-sm lg:text-base uppercase">Stockman II Comp Toe</h6>
+                        <p class="text-xxs md:text-sm">Men’s Work Boots</p>
+                        <div class="mt-1">
+                            <span class="text-[#FB6F13] text-13 md:text-base lg:text-23 font-TradeGothic_bold">$160</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+     <!-- Modal for Cart -->
+    <dialog id="cart__modal" class="modal">
+        <div class="modal-box rounded-none w-11/12 max-w-[85%] pt-4 md:pt-6 lg:pt-8 xl:pt-11 2xl:pt-14 px-4 md:px-9 lg:px-12 xl:px-16 2xl:px-20 pb-7 md:pb-12 lg:pb-16 xl:pb-20 2xl:pb-24">
+            <form method="dialog">
+                <button
+                    class="btn btn-sm btn-circle border border-black absolute hover:opacity-100 right-5 top-5 h-6 w-6 min-h-6 leading-26 bg-transparent hover:border-black focus-visible:outline-0 hover:bg-transparent">✕</button>
+            </form>
+            <div class="modal__header flex items-center pb-6 border-b border-[#d6d6d6]">
+                <img class="max-w-[35px] md:max-w-[45px]" src="../assets/images/global/bogs-ring-logo.svg" />
+                <span class="ml-3 md:ml-7 text-17 md:text-2xl capitalize">Added to bag</span>
+            </div>
+
+            <div class="modal__content mt-11 md:mt-9">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-65Pc flex relative mr-[5%] pb-7 border-b border-[#d6d6d6]">
+                        <img class="max-w-[130px] md:max-w-[215px] bg-[#f8f8f8] object-contain rounded-lg" src="../assets/images/home/addedToCart.jpg" />
+                        <div class="flex flex-col px-7 pt-7 pb-1 md:py-16">
+                            <h6 id="" class="text-15 md:text-lg font-TradeGothic_bold">Men’s Boseman Tall</h6>
+                            <p class="text-15 md:text-lg text-cart__secondary">Size – <span id="">10</span></p>
+                            <p class="text-15 md:text-lg text-cart__secondary">Color – <span id="">Black</span></p>
+                            <p class="md:hidden"><span id="actualPrice" class="line-through text-15 text-cart__secondary mr-4 md:text-base">180</span>
+                                <span id="discountedPrice" class="text-15 md:text-base font-TradeGothic_bold">$160</span></p>
+    
+                            <div class="mt-10 md:mt-16 flex items-center">
+                                <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">-</button>
+                                <span class="mx-5 text-15 mt-1.5">1</span>
+                                <button class="w-[27px] h-[27px] rounded-full bg-[#efefef] hover:opacity-70">+</button>
+    
+                                <span id="actualPrice" class="hidden lg:block line-through text-15 text-cart__secondary ml-10 mr-4 md:text-base">180</span>
+                                <span id="discountedPrice" class="hidden lg:block text-15 md:text-base font-TradeGothic_bold">$160</span>
+                            </div>
+                        </div>
+                        <a class="absolute -top-2 md:top-2 right-2 text-15 text-cart__secondary hover:underline hover:cursor-pointer">Remove</a>
+                    </div>
+                    <div class="w-full md:w-35Pc mt-9 md:mt-0 pb-7 border-b border-[#d6d6d6]">
+                        <div class="flex justify-between">
+                            <span class="text-15 md:text-23">Subtotal</span>
+                            <span class="text-15 md:text-23">$<span id="item__price" class="mr-2">315</span>USD</span>
+                        </div>
+    
+                        <a class="block w-full h-12 mt-6 md:mt-14 text-xl md:text-2xl text-center bg-black text-white rounded-3xl leading-11 md:leading-11 cursor-pointer border-2 border-transparent hover:border-black hover:border-2 hover:bg-transparent hover:text-black">Checkout (<span id="">2</span>)</a>
+    
+                        <a class="text-15 md:text-lg text-center block capitalize mt-4 md:mt-6 hover:underline hover:cursor-pointer">Continue shopping </a>
+                    </div>
+                </div>
+                
+
+                <!-- Suggested boots module inside cart -->
+                <div class="mt-8 md:mt-24">
+                    <h3 class="capitalize text-17 md:text-2xl mb-4 md:mb-5">You may also like</h3>
+                    <div class="swiper featured__products__swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper pb-5">
+                            <!-- Slides -->
+        
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-2xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct01.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic ultra mid</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Waterproof Insulated Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-2xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct02.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Classic high</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Insulated Waterproof Work Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-2xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct03.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie Chelsea II</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide relative">
+                                <span class="absolute top-5 right-5 text-xl lg:text-2xl font-TradeGothic_bold">3D</span>
+                                <img src="../assets/images/home/FeaturedProduct04.jpg" alt="boot" />
+                                <div class="mt-5">
+                                    <h6 class="font-TradeGothic_bold text-sm md:text-base uppercase">Sauvie chelsea II</h6>
+                                    <p class="text-xxs md:text-sm">Men’s Slip On Boots</p>
+                                    <div>
+                                        <span class="text-[#FB6F13] text-13 md:text-23 font-TradeGothic_bold">$160</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+    <div class="relative z-[999] mt-16 h-14 md:h-16 text-sm md:text-lg capitalize text-center font-bold bg-[#e7e7e7] font-TradeGothic_bold leading-56 md:leading-64">
+        Winter Boots, Rain Boots & Farm Boots | BOGS Footwear
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black relative z-[999]" aria-labelledby="footer-heading">
+        <div class="inner__footer max-w-bogs mx-auto">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="px-5 pb-8 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
+                <div class="grid md:grid-cols-2 md:gap-8 xl:grid xl:grid-cols-4 xl:gap-8">
+                    <div class="mt-4 grid sm:grid-cols-3 gap-8 order-last md:order-first xl:col-span-2 xl:mt-0">
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Get Info</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Sizing
+                                            Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Store
+                                            Locator</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Start A
+                                            Return</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Legal</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Term of
+                                            Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="text-sm leading-6 text-white hover:opacity-50">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Personal
+                                            Information Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Notice at
+                                            Point of Collection Policy</a>
+                                    </li>
+                            </div>
+                        </div>
+                        <div class="md:grid md:grid-cols-1 md:gap-8">
+                            <div>
+                                <h3 class="text-lg font-semibold leading-6 text-white">Featured</h3>
+                                <ul role="list" class="mt-6 space-y-2">
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Women's Winter
+                                            Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">BOGS Women's
+                                            Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                            Waterproof Boots</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-sm leading-6 text-white hover:opacity-50">Men's
+                                            Waterproof Shoes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden xl:block"></div>
+                    <div class="mt-4 mb-10 sm:mt-10 sm:mb-0 order-first md:order-last xl:mt-0">
+                        <h3 class="text-lg font-semibold leading-6 text-white">Stay Connected</h3>
+
+                        <form class="mt-6 sm:flex flex-col sm:max-w-[100vw]">
+                            <!-- <label for="email-address" class="sr-only">Email address</label> -->
+                            <input type="email" name="email-address" id="email-address" autocomplete="email" required
+                                class="w-full h-12 lg:h-14 rounded-full border-0 bg-white outline-none px-6 pt-1 text-lg placeholder:text-black"
+                                placeholder="Enter Email Address">
+                            <input type="tel" name="phone" id="phone" autocomplete="phone" required
+                                class="mt-3 w-full h-12 lg:h-14 rounded-full border-0 outline-none bg-white px-6 pt-1 text-lg placeholder:text-black"
+                                placeholder="Enter Phone Number">
+                            <div class="mt-4 sm:ml-0 sm:mt-3 sm:flex-shrink-0" style="display: none;">
+                                <button type="submit"
+                                    class="flex w-full items-center justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Subscribe</button>
+                            </div>
+
+                        </form>
+                        <p class="mt-2 text-sm leading-6 text-white">*By clicking on the arrow you are signing up for
+                            text and you agree to receive automated recurring marketing messages (including cart
+                            reminders) from BOGS Footwear and accept the Terms & Privacy Policy.</p>
+                    </div>
+                </div>
+                <div class="pt-8">
+                    <p class="text-xs leading-5 text-white">&copy; 2024 Bogsfootwear.com, All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="../plugins/flowbite/js/flowbite.bundle.js"></script>
+    <script src="../plugins/swiper/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
