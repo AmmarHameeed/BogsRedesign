@@ -315,8 +315,8 @@ body.scrolling-body .mega__menu .filter__mobile__button {
     transition: width 0.4s linear;
   }
   .category__item.have_3d:hover{
-    background: #f8f8f8;
-    transition: all 0.2s ease-in;
+    background-color: #f8f8f8;
+    transition: background-color 0.2s ease-in-out;
   }
 
   .category__item:nth-child(4n) {
