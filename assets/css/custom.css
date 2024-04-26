@@ -200,16 +200,19 @@ body.scrolling-body .mega__menu .filter__mobile__button {
 
 /* Swiper Styles START */
 
-.featured__products__swiper .swiper-pagination {
+.featured__products__swiper .swiper-pagination,
+.featured__actvityFilter__swiper .swiper-pagination {
   bottom: 0 !important;
 }
 
-.featured__products__swiper .swiper-pagination .swiper-pagination-bullet {
+.featured__products__swiper .swiper-pagination .swiper-pagination-bullet,
+.featured__actvityFilter__swiper .swiper-pagination .swiper-pagination-bullet {
   background: #000000;
   opacity: 0.3;
 }
 
-.featured__products__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.featured__products__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.featured__actvityFilter__swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #000000;
   opacity: 1;
 }
@@ -269,7 +272,10 @@ body.scrolling-body .mega__menu .filter__mobile__button {
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22.208' height='18.955' viewBox='387.792 157.339 22.208 18.955'%3E%3Cg data-name='np_filter_4843472_000000'%3E%3Cpath d='M391.521 159.415v1.122h-3.168a.562.562 0 0 1 0-1.122h3.168Z' fill-rule='evenodd' data-name='Path 1259'/%3E%3Cpath d='M410 159.976c0 .309-.252.56-.56.56h-14.721v-1.12h14.72c.308 0 .56.251.56.56Z' fill-rule='evenodd' data-name='Path 1260'/%3E%3Cpath d='M390.484 157.34v5.242h5.243v-5.243h-5.243Zm4.235 4.234h-3.197v-3.225h3.224v3.225Z' fill-rule='evenodd' data-name='Path 1261'/%3E%3Cpath d='M401.7 166.256v1.122h-13.347a.562.562 0 0 1 0-1.122H401.7Z' fill-rule='evenodd' data-name='Path 1262'/%3E%3Cpath d='M410 166.817c0 .309-.252.56-.56.56h-4.516v-1.12h4.515c.308 0 .56.251.56.56Z' fill-rule='evenodd' data-name='Path 1263'/%3E%3Cpath d='M400.663 164.182v5.243h5.243v-5.243h-5.243Zm4.261 4.233H401.7v-3.224h3.224v3.224Z' fill-rule='evenodd' data-name='Path 1264'/%3E%3Cpath d='M391.521 173.097v1.122h-3.168a.562.562 0 0 1 0-1.122h3.168Z' fill-rule='evenodd' data-name='Path 1265'/%3E%3Cpath d='M410 173.658c0 .309-.252.56-.56.56h-14.721v-1.121h14.72c.308 0 .56.253.56.56Z' fill-rule='evenodd' data-name='Path 1266'/%3E%3Cpath d='M390.484 171.051v5.243h5.243v-5.243h-5.243Zm4.235 4.234h-3.197v-3.225h3.224v3.225Z' fill-rule='evenodd' data-name='Path 1267'/%3E%3C/g%3E%3C/svg%3E");
 }
-
+.category__item.have_3d:hover{
+  background-color: #f8f8f8;
+  transition: background-color 0.2s ease-in-out;
+}
 /* Filter sidebar custom DESKTOP styles START */
 
 @media screen and (min-width:769px) {
@@ -314,10 +320,7 @@ body.scrolling-body .mega__menu .filter__mobile__button {
     -o-transition: width 0.4s linear;
     transition: width 0.4s linear;
   }
-  .category__item.have_3d:hover{
-    background-color: #f8f8f8;
-    transition: background-color 0.2s ease-in-out;
-  }
+
 
   .category__item:nth-child(4n) {
     margin-right: 0;
