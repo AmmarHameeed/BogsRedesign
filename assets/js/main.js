@@ -14,11 +14,9 @@ $(document).ready(function () {
 
   // Setting the height of the mobile menu according to the viewport's height
   var screenHeightOnLoad = $("html").height();
-  console.log("->",screenHeightOnLoad)
   var minusHeight = 261;
 
   var adjustedHeight = screenHeightOnLoad - minusHeight;
-  console.log("->",adjustedHeight);
 
   $("#mobile__menu, #mobileMenu__overlay").css("height", adjustedHeight);
 
