@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="preload" href="../assets/images/home/Header-Desktop.jpg" as="image" media="(min-width: 768px)" />
-    <link rel="preload" href="../assets/images/home/Header-Mobile.webp" as="image" media="(max-width: 767px)" />
+    <link rel="preload" fetchpriority="high" href="../assets/images/home/Header-Mobile.webp" as="image" media="(max-width: 767px)" />
 
 
     <script src="../assets/js/tailwindConfig.js"></script>
@@ -852,7 +852,7 @@
             <picture>
                 <source media="(min-width:768px)" srcset="../assets/images/home/Header-Desktop.jpg">
                 <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
-                <img src="../assets/images/home/Header-Mobile.webp" alt="boot" fetchpriority="high" style="width:100%;">
+                <img src="../assets/images/home/Header-Mobile.webp" alt="boot" style="width:100%;">
             </picture>
             <!-- <img class="w-full" src="../assets/images/home/Header-Desktop.jpg" /> -->
         </div>
@@ -951,7 +951,7 @@
                 <picture>
                     <source media="(min-width:768px)" srcset="../assets/images/home/seamless-tech-Desktop.jpg">
                     <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
-                    <img src="../assets/images/home/seamless-tech-Mobile.jpg" alt="boot" style="width:100%;">
+                    <img src="../assets/images/home/seamless-tech-Mobile.jpg" fetchpriority="low" alt="boot" style="width:100%;">
                 </picture>
                 <!-- <img class="" src="../assets/images/home/seamless-tech.jpg" /> -->
                 <div
@@ -998,7 +998,7 @@
                     class="absolute w-[calc(100%-30px)] mt-60Pc left-15 bottom-60 md:bottom-auto md:left-auto md:mt-0 md:w-influencer__section__right md:h-[calc(100%-96px)] right-12 top-12">
                     <a class="video__item hover:cursor-pointer"
                         data-video-url="https://player.vimeo.com/video/922574941">
-                        <img class="h-full w-full min-h-full object-cover rounded-lg"
+                        <img class="h-full w-full min-h-full object-cover rounded-lg" fetchpriority="low"
                             src="../assets/images/home/Influencer__module__video__thumbnail.jpg" alt="boot" />
                         <!-- <video playsinline muted loop id="desktopHomePage" style="width:100%;"
                             class="h-full min-h-full object-cover object-[3px_-100px] rounded-lg">
