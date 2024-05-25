@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'bogsfootwear-icons';
+    src: url('bogsfootwear-icons.woff2') format('woff2'),
+        url('bogsfootwear-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bogs Headline';
+    src: url('BogsHeadline.woff2') format('woff2'),
+        url('BogsHeadline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Front Page Neue';
+    src: url('FrontPageNeue.woff2') format('woff2'),
+        url('FrontPageNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
