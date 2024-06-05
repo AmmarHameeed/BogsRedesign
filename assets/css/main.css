@@ -1850,7 +1850,8 @@ body {
 @media (max-width: 767px) {
   .banner-2 .banner-content{
     left: 25px;
-    top: 12%;
+    top: 10%;
+    padding-right:15px;
     bottom: unset;
     transform: translateY(0);
   }
