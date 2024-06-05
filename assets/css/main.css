@@ -1790,7 +1790,7 @@ body {
 .banner-2 #seamless__iframe {
   width: 100%;
   height: 100vh;
-  max-height: 630px;
+  max-height: 730px;
 }
 @media (min-width: 993px) {
   .banner-2 #seamless__iframe {
