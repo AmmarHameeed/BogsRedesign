@@ -1830,6 +1830,16 @@ body {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
+@media (max-width: 767px) {
+  .banner-2 .banner-content {
+    left: 25px;
+    top: 9%;
+    padding-right: 15px;
+    bottom: unset;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .banner-2 .banner-content h3 {
   font-size: 83px;
   font-weight: 400;
@@ -1848,13 +1858,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .banner-2 .banner-content{
-    left: 25px;
-    top: 9%;
-    padding-right:15px;
-    bottom: unset;
-    transform: translateY(0);
-  }
   .banner-2 .banner-content h3 {
     font-size: 40px;
   }
