@@ -1679,6 +1679,114 @@
   }
 }
 
+#boots_a{
+  background: #f8f8f8;
+  padding: 50px 0;
+  .buttons__list{
+    .nav-item{
+      .nav-link{
+        display: inline-block;
+        margin-right: 18px;
+                font-family: $FrontPageNeue;
+                font-size: $btn-text;
+                font-weight: 400;
+                background: transparent;
+                color: #000000;
+                padding: 0px 35px;
+                border-radius: 100px;
+                border: 2px solid #000;
+                text-transform: uppercase;
+
+                @include mq(lg) {
+                    font-size: $btn-text-sm;
+                }
+
+                &.active{
+                  color: #fff;
+                  background: #000;
+                }
+
+                &:hover {
+                    background: #000000;
+                    color: #ffffff;
+                }
+      }
+    }
+  }
+
+  .tab-content{
+    .tabs__content{
+      display: flex;
+      
+      .product__wrap{
+        .content {
+          margin-top: 15px;
+          padding: 0px 0 0 15%;
+          .title {
+              font-size: 16px;
+              line-height: 1.2;
+              font-weight: 700;
+              color: #000;
+              margin-bottom: 0;
+              text-transform: uppercase;
+  
+              @include mq(xs) {
+                  font-size: 14px;
+              }
+  
+              a {
+                  color: #000;
+  
+                  &:hover {
+                      color: $theme-color;
+                  }
+              }
+          }
+  
+          .text {
+              p {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #000;
+                  margin-bottom: 0;
+  
+                  @include mq(md) {
+                      font-size: 13px;
+                  }
+  
+                  @include mq(xs) {
+                      font-size: 10px;
+                  }
+              }
+          }
+  
+          .price {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+  
+              span {
+                  font-size: $price-text;
+                  font-weight: 700;
+                  color: #000;
+  
+                  @include mq(xs) {
+                      font-size: $price-text-sm;
+                  }
+              }
+  
+              
+  
+              .sell {
+                  color: $heading-color;
+              }
+          }
+      }
+      }
+    }
+  }
+}
+
 #boots_b {
 
   .slick-slide {

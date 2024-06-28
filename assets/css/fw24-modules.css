@@ -1806,6 +1806,103 @@
   color: #ffffff !important;
 }
 
+#boots_a {
+  background: #f8f8f8;
+  padding: 50px 0;
+}
+#boots_a .buttons__list .nav-item .nav-link {
+  display: inline-block;
+  margin-right: 18px;
+  font-family: "Front Page Neue";
+  font-size: 24px;
+  font-weight: 400;
+  background: transparent;
+  color: #000000;
+  padding: 0px 35px;
+  border-radius: 100px;
+  border: 2px solid #000;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #boots_a .buttons__list .nav-item .nav-link {
+    font-size: 20px;
+  }
+}
+#boots_a .buttons__list .nav-item .nav-link.active {
+  color: #fff;
+  background: #000;
+}
+#boots_a .buttons__list .nav-item .nav-link:hover {
+  background: #000000;
+  color: #ffffff;
+}
+#boots_a .tab-content .tabs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#boots_a .tab-content .tabs__content .product__wrap .content {
+  margin-top: 15px;
+  padding: 0px 0 0 15%;
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  #boots_a .tab-content .tabs__content .product__wrap .content .title {
+    font-size: 14px;
+  }
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .title a {
+  color: #000;
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .title a:hover {
+  color: #FB6F13;
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #boots_a .tab-content .tabs__content .product__wrap .content .text p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  #boots_a .tab-content .tabs__content .product__wrap .content .text p {
+    font-size: 10px;
+  }
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .price span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+@media (max-width: 767px) {
+  #boots_a .tab-content .tabs__content .product__wrap .content .price span {
+    font-size: 14px;
+  }
+}
+#boots_a .tab-content .tabs__content .product__wrap .content .price .sell {
+  color: #000;
+}
+
 #boots_b {
   /* the parent */
 }
