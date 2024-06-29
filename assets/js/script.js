@@ -544,74 +544,52 @@
             }
         ]
     });
-    // $('.dual__slide__slick').slick({
-    //     mobileFirst: true,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 2,
-    //     autoplay: true,
-    //     dots: true,
-    //     arrows: false,
-    //     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-    //     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
-    //     responsive: [
-    //         {
-    //             // md
-    //             breakpoint: 992,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             // xs
-    //             breakpoint: 676,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 2
-    //             }
-    //         }
-    //     ]
-    // });
-
-
 })(jQuery);
 
-
+// Slick initialization in the presence of bootstrap tabs and pill
 document.addEventListener('DOMContentLoaded', function() {
-  // Function to initialize slick on a specific target
-  function initializeSlick(target) {
-    $(target).not('.slick-initialized').slick({
-      mobileFirst: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      autoplay: true,
-      dots: true,
-      arrows: false,
-      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
-      responsive: [
-        {
-          // md
-          breakpoint: 992,
-          settings: "unslick"
-        },
-        {
-          // xs
-          breakpoint: 676,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+    // Function to initialize slick on a specific target
+    function initializeSlick(target) {
+      $(target).not('.slick-initialized').slick({
+        mobileFirst: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        dots: true,
+        arrows: false,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        responsive: [
+          {
+            // md
+            breakpoint: 992,
+            settings: "unslick"
+          },
+          {
+            // xs
+            breakpoint: 676,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
           }
+        ]
+      });
+    }
+  
+    // Initialize slick on the active tab on page load
+    initializeSlick('#pills-men .dual__slide__slick');
+  
+    // When a tab is shown, destroy and reinitialize slick if needed
+    document.querySelectorAll('button[data-bs-toggle="pill"]').forEach(function(tab) {
+      tab.addEventListener('shown.bs.tab', function(event) {
+        var target = event.target.getAttribute("data-bs-target") + ' .dual__slide__slick';
+        // Destroy slick if it is already initialized
+        if ($(target).hasClass('slick-initialized')) {
+          $(target).slick('unslick');
         }
-      ]
-    });
-  }
-
-  // Initialize slick on the active tab on page load
-  initializeSlick('#pills-men .dual__slide__slick');
-
-  // When a tab is shown, initialize slick if needed
-  document.querySelectorAll('button[data-bs-toggle="pill"]').forEach(function(tab) {
-    tab.addEventListener('shown.bs.tab', function(event) {
-      var target = event.target.getAttribute("data-bs-target");
-      initializeSlick(target + ' .dual__slide__slick');
+        // Reinitialize slick
+        initializeSlick(target);
+      });
     });
   });
-});
