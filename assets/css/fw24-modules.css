@@ -1810,6 +1810,11 @@
   background: #f8f8f8;
   padding: 50px 0;
 }
+@media (max-width: 767px) {
+  #boots_a .buttons__list {
+    padding-right: 0;
+  }
+}
 #boots_a .buttons__list .nav-item .nav-link {
   display: inline-block;
   margin-right: 18px;
@@ -1828,6 +1833,13 @@
     font-size: 20px;
   }
 }
+@media (max-width: 767px) {
+  #boots_a .buttons__list .nav-item .nav-link {
+    font-size: 21px;
+    padding: 0px 25px;
+    margin-right: 10px;
+  }
+}
 #boots_a .buttons__list .nav-item .nav-link.active {
   color: #fff;
   background: #000;
@@ -1835,6 +1847,9 @@
 #boots_a .buttons__list .nav-item .nav-link:hover {
   background: #000000;
   color: #ffffff;
+}
+#boots_a .buttons__list .nav-item:nth-child(3) .nav-link {
+  margin-right: 0;
 }
 #boots_a .tab-content .tabs__content {
   position: relative;
