@@ -1716,8 +1716,14 @@
 
   .tab-content{
     .tabs__content{
+      position: relative;
       display: flex;
-      
+      align-items: flex-end;
+      // flex-flow: column;
+      .slick-track{
+        display: flex;
+        align-items: flex-end;
+      }
       .product__wrap{
         .content {
           margin-top: 15px;
@@ -1783,7 +1789,47 @@
           }
       }
       }
+      .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+        gap: 8px;
+
+        @media screen and (min-width: 993px) {
+          display: none;
+        }
+    
+        li {
+          width: 9px;
+          height: 9px;
+          background: #000;
+          border-radius: 100%;
+          border: 1px solid #707070;
+          opacity: 0.2;
+          cursor: pointer;
+    
+          &.slick-active {
+            opacity: 1;
+          }
+    
+          button {
+            display: none;
+          }
+        }
+    
+        @include mq(xs) {
+          display: flex;
+        }
+      }
     }
+    
   }
 }
 
