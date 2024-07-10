@@ -1,0 +1,10 @@
+@use "common" as *;
+
+#support_g {
+    @include mq(xs) {
+      .mt-xs-15 {
+        margin-top: 15px;
+      }
+    }
+  
+  }

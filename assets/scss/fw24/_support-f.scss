@@ -1,0 +1,41 @@
+@use "common" as *;
+
+#support_f {
+    .banner-2 {
+      .text-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        z-index: 10;
+        text-align: center;
+  
+        .read-more {
+          display: inline-block;
+          font-size: $btn-text;
+          font-weight: 400;
+          color: #fff;
+          background: #000;
+          padding: 3px 25px;
+          border-radius: 100px;
+          font-family: $FrontPageNeue;
+          text-transform: uppercase;
+          border: 2px solid #000;
+  
+          @include mq(lg) {
+            font-size: $btn-text-sm;
+          }
+  
+          @include mq(xs) {
+            width: auto;
+            font-size: $btn-text-sm;
+          }
+  
+          &:hover {
+            color: #000;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }

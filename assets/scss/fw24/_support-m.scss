@@ -1,0 +1,118 @@
+@use "common" as *;
+
+#support_m {
+    position: relative;
+    margin-bottom: 40px;
+  
+    @media screen and (max-width: 992px) {
+      margin-bottom: 70px;
+    }
+  
+    @media screen and (max-width: 768px) {
+      margin-bottom: 22px;
+    }
+  
+    .warehouse__package__section--heading {
+      text-align: center;
+  
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+      }
+  
+      .warehouse__package__section--heading-text {
+        margin-bottom: 12px;
+        font-size: 80px;
+        line-height: 118px;
+        font-family: $BogsHeadline, Arial, sans-serif;
+        text-transform: uppercase;
+  
+        @media screen and (max-width: 992px) {
+          width: 50%;
+          margin: 0 auto 15px;
+          font-size: 34px;
+          line-height: 34px;
+        }
+      }
+    }
+  
+    .overlay__container {
+      position: absolute;
+      width: 30%;
+      top: 50%;
+      left: 70px;
+      padding: 4.85% 2.5% 3.5% 3.25%;
+      background: rgba($color: #ffffff, $alpha: 0.32);
+      transform: translateY(-40%);
+  
+      @media screen and (max-width: 1380px) {
+        width: 35%;
+      }
+  
+      @media screen and (max-width: 1200px) {
+        width: 40%;
+      }
+  
+      @media screen and (max-width: 992px) {
+        position: unset;
+        width: 100%;
+        transform: unset;
+        padding: 50px 22px 0 22px;
+      }
+  
+      @media screen and (max-width: 768px) {
+        margin-top: 15px;
+        background: #f5f5f5;
+        padding-bottom: 25px;
+      }
+  
+      .wp__overlay__text {
+        margin-bottom: 45px;
+        font-size: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-family: $BogsHeadline, Arial, sans-serif;
+  
+        @media screen and (max-width: 1550px) {
+          font-size: 36px;
+          line-height: 36px;
+        }
+  
+        @media screen and (max-width: 1200px) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+  
+        @media screen and (max-width: 992px) {
+          margin-bottom: 15px;
+          font-size: 32px;
+          line-height: 32px;
+        }
+  
+        @media screen and (max-width: 768px) {
+          margin-bottom: 15px;
+          font-size: 26px;
+          line-height: 26px;
+        }
+      }
+  
+      .wp__overlay__desc {
+        font-size: 28px;
+        line-height: 50px;
+  
+        @media screen and (max-width: 1500px) {
+          font-size: 24px;
+          line-height: 40px;
+        }
+  
+        @media screen and (max-width: 1200px) and (min-width: 992px) {
+          font-size: 20px;
+          line-height: 32px;
+        }
+  
+        @media screen and (max-width: 992px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
