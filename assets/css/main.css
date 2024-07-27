@@ -2517,16 +2517,6 @@ body {
   }
 }
 .cart-popup-wrapper .cart-popup-middle .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 30px;
   border-bottom: 1px solid #D6D6D6;
 }
@@ -2552,7 +2542,6 @@ body {
           justify-content: space-between;
   gap: 20px;
   border-bottom: 1px solid #D6D6D6;
-  padding-top: 30px;
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
