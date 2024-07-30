@@ -507,6 +507,9 @@ body {
     align-items: center;
     justify-content: right;
     gap: 30px;
+    @include mq(xs) {
+        align-items: flex-end;
+    }
 
     .cart-icon {
         line-height: 1;

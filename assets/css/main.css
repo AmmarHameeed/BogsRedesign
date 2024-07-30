@@ -833,6 +833,13 @@ body {
           justify-content: right;
   gap: 30px;
 }
+@media (max-width: 767px) {
+  .header-middle-right {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 .header-middle-right .cart-icon {
   line-height: 1;
   position: relative;
