@@ -1215,7 +1215,11 @@
         }
 
         .right {
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
             padding-bottom: 30px;
+            padding-top: 30px;
             border-bottom: 1px solid #D6D6D6;
             @include mq(md) {
                 padding-bottom: 20px;
