@@ -497,3 +497,12 @@
         }
     }
 }
+
+.fancybox__content{
+    width: 80% !important;
+    height: auto !important;
+    @include mq(xs) {
+        width: 98% !important;
+       aspect-ratio: .8 !important;
+    }
+}

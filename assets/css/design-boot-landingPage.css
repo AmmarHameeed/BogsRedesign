@@ -1726,6 +1726,17 @@ body {
   }
 }
 
+.fancybox__content {
+  width: 80% !important;
+  height: auto !important;
+}
+@media (max-width: 767px) {
+  .fancybox__content {
+    width: 98% !important;
+    aspect-ratio: 0.8 !important;
+  }
+}
+
 .promo-bottom {
   background: #E7E7E7;
   padding-top: 10px;
