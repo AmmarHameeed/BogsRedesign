@@ -1503,8 +1503,10 @@ body {
     line-height: 24px;
   }
 }
-#support_o .content__wrapper .left__content img {
-  height: 100%;
+@media screen and (min-width: 767px) {
+  #support_o .content__wrapper .left__content img {
+    height: 100%;
+  }
 }
 #support_o .content__wrapper .left__content img:hover {
   cursor: pointer;
@@ -1521,8 +1523,10 @@ body {
     margin-left: 0;
   }
 }
-#support_o .content__wrapper .right__content img {
-  height: 100%;
+@media screen and (min-width: 767px) {
+  #support_o .content__wrapper .right__content img {
+    height: 100%;
+  }
 }
 #support_o .content__wrapper .right__content img:hover {
   cursor: pointer;
