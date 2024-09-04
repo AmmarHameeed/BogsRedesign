@@ -1,0 +1,531 @@
+@use "common" as *;
+
+.hero-area {
+  position: relative;
+  z-index: 1;
+
+  .hero-thumb {
+    video {
+      width: 100%;
+    }
+
+    .watch__btn {
+      position: absolute;
+      top: 61%;
+      left: 50%;
+      font-size: 30px;
+      font-weight: 400;
+      color: #000;
+      background: #ffffff;
+      padding: 0px 65px;
+      border-radius: 100px;
+      font-family: $FrontPageNeue;
+      text-transform: uppercase;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transform: translateX(-50%);
+
+      @include mq(lg) {
+        font-size: $btn-text-sm;
+      }
+
+      @include mq(xs) {
+        width: auto;
+        top: 75%;
+        font-size: $btn-text-sm;
+      }
+
+      &:hover {
+        color: #ffffff;
+        background: #000000;
+        border: 2px solid #000000;
+      }
+    }
+  }
+}
+
+#text__module {
+  text-align: center;
+  margin-bottom: 125px;
+
+  @include mq(xs) {
+    margin-bottom: 25px;
+  }
+
+  .tm__heading {
+    color: #1d1d1d;
+    font-size: 55px;
+    line-height: 59px;
+    text-transform: uppercase;
+    font-family: $BogsHeadline, Arial, sans-serif;
+
+    @include mq(xs) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    @include mq(sm) {
+      font-size: 42px;
+      line-height: 46px;
+    }
+  }
+
+  .tm__desc {
+    font-size: 30px;
+
+    @include mq(xs) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mq(sm) {
+      font-size: 21px;
+      line-height: 22px;
+    }
+  }
+}
+
+#ffa_featured__product {
+  @include mq(xs) {
+    margin-bottom: 0;
+  }
+  .ffa__img__dec {
+
+    .ffa__fp__name {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 0;
+
+      @include mq(xs) {
+        font-size: 16px;
+      }
+    }
+
+    .ffa__fp__price {
+      font-size: 34px;
+      color: #000000;
+
+      @include mq(xs) {
+        font-size: 16px;
+      }
+    }
+
+    .ffa__fp__sizeWrapper {
+      margin-top: 5px;
+      font-size: 25px;
+      
+
+      p {
+        margin-bottom: 5px;
+        color: #000000;
+        @include mq(xs) {
+          font-size: 12px;
+        }
+      }
+
+      .sizeItemWrapper {
+        .sizeItem {
+          display: inline-block;
+          height: 43px;
+          width: 43px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          color: #000000;
+          text-align: center;
+          border: 1px solid #707070;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #000000;
+            color: #ffffff;
+          }
+
+          @include mq(xs) {
+            height: 40px;
+            width: 40px;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+
+    .addButtonWrapper{
+      @include mq(xs) {
+        margin-bottom: 45px;
+        text-align: center;
+      }
+      .addButton {
+        display: inline-block;
+        margin-top: 25px;
+        font-size: $btn-text;
+        font-weight: 400;
+        color: #fff;
+        background: #000;
+        padding: 0px 25px;
+        border-radius: 100px;
+        font-family: $FrontPageNeue;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        cursor: pointer;
+  
+        @include mq(lg) {
+          font-size: $btn-text-sm;
+        }
+  
+        @include mq(xs) {
+          width: auto;
+          font-size: $btn-text-sm;
+        }
+  
+        &:hover {
+          color: #000;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
+#lifestyle_a {
+  .content__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left__content {
+      position: relative;
+      width: 50%;
+
+      img {
+        height: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+
+    }
+
+    .right__content {
+      width: 50%;
+      margin-left: 15px;
+
+      .lower__thumb {
+        position: relative;
+        margin-top: 15px;
+      }
+
+      .upper__thumb--wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .lower__left-thumb {
+          position: relative;
+          margin-right: 15px;
+        }
+      }
+
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .video__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        padding: 2px 35px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: $FrontPageNeue;
+        font-weight: 400;
+        color: #171717;
+        background: #ffffff;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+        text-align: center;
+        justify-content: center;
+        z-index: 999;
+
+        &:hover {
+          background: #000000;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+
+#lifestyle_a-mobile {
+  margin-bottom: 25px;
+
+  .dual__swiper__slide {
+    position: relative;
+    height: auto;
+
+    a {
+      width: 100%;
+    }
+
+    .video-btn.specific__btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: fit-content;
+      height: 30px;
+      margin: auto;
+      padding: 0px 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: $FrontPageNeue;
+      font-weight: 400;
+      color: #171717;
+      text-align: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .dual__swiper__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slick-dots {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    gap: 8px;
+
+    li {
+      width: 9px;
+      height: 9px;
+      background: #000;
+      border-radius: 100%;
+      border: 1px solid #707070;
+      opacity: 0.2;
+      cursor: pointer;
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      button {
+        display: none;
+      }
+    }
+
+    @include mq(xs) {
+      display: flex;
+    }
+  }
+}
+
+#ffa__module {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    max-width: 185px;
+
+    @include mq(sm) {
+      max-width: 120px;
+    }
+    @include mq(xs) {
+      max-width: 100px;
+    }
+  }
+
+  .ffa__desc {
+    font-size: 30px;
+
+    @include mq(xs) {
+      font-size: $btn-text-sm;
+    }
+  }
+
+  .read-more {
+    max-width: 150px;
+    display: inline-block;
+    font-size: $btn-text;
+    font-weight: 400;
+    color: #fff;
+    background: #000;
+    padding: 3px 25px;
+    border-radius: 100px;
+    font-family: $FrontPageNeue;
+    text-transform: uppercase;
+    border: 2px solid #000;
+
+    @include mq(lg) {
+      font-size: $btn-text-sm;
+    }
+
+    @include mq(xs) {
+      width: auto;
+      padding: 0px 20px;
+      font-size: $btn-text-sm;
+    }
+
+    &:hover {
+      color: #000;
+      background: transparent;
+    }
+  }
+}
+
+#lifestyle_b {
+  .content__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left__content {
+      width: 50%;
+      margin-right: 15px;
+
+      .upper__thumb {
+        position: relative;
+        margin-bottom: 15px;
+      }
+
+      .lower__thumb--wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .lower__left-thumb {
+          margin-right: 15px;
+        }
+      }
+
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right__content {
+      position: relative;
+      width: 50%;
+
+      img {
+        height: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .video__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff;
+        padding: 2px 35px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: $FrontPageNeue;
+        font-weight: 400;
+        color: #171717;
+        background: #ffffff;
+        font-size: 28px;
+        letter-spacing: 1.5px;
+        text-align: center;
+        justify-content: center;
+        z-index: 999;
+
+        &:hover {
+          background: #000000;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+
+#lifestyle_b-mobile {
+  margin-bottom: 25px;
+
+  .dual__swiper__slide {
+    position: relative;
+    height: auto;
+
+    a {
+      width: 100%;
+    }
+
+    .video-btn.specific__btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: fit-content;
+      height: 30px;
+      margin: auto;
+      padding: 0px 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-family: $FrontPageNeue;
+      font-weight: 400;
+      color: #171717;
+      text-align: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .dual__swiper__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slick-dots {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    gap: 8px;
+
+    li {
+      width: 9px;
+      height: 9px;
+      background: #000;
+      border-radius: 100%;
+      border: 1px solid #707070;
+      opacity: 0.2;
+      cursor: pointer;
+
+      &.slick-active {
+        opacity: 1;
+      }
+
+      button {
+        display: none;
+      }
+    }
+
+    @include mq(xs) {
+      display: flex;
+    }
+  }
+}
