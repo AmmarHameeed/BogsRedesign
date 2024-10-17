@@ -1,0 +1,151 @@
+@use "common" as *;
+
+.hero-area {
+  position: relative;
+  z-index: 1;
+
+  .hero-thumb {
+    video {
+      width: 100%;
+    }
+
+    .watch__btn {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      font-size: 30px;
+      font-weight: 400;
+      color: #000;
+      background: #ffffff;
+      padding: 0px 65px;
+      border-radius: 100px;
+      font-family: $FrontPageNeue;
+      text-transform: uppercase;
+      border: 2px solid #ffffff;
+      cursor: pointer;
+      transform: translateX(-50%);
+
+      @include mq(lg) {
+        font-size: $btn-text-sm;
+      }
+
+      @include mq(xs) {
+        width: auto;
+        top: 77%;
+        font-size: $btn-text-sm;
+      }
+
+      &:hover {
+        color: #ffffff;
+        background: #000000;
+        border: 2px solid #000000;
+      }
+    }
+  }
+}
+
+.text__module {
+  text-align: center;
+
+  @include mq(xs) {
+    margin-bottom: 25px;
+  }
+
+  .tm__heading {
+    color: #1d1d1d;
+    font-size: 55px;
+    line-height: 59px;
+    text-transform: uppercase;
+    font-family: $BogsHeadline, Arial, sans-serif;
+
+    @include mq(xs) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    @include mq(sm) {
+      font-size: 42px;
+      line-height: 46px;
+    }
+  }
+
+  .tm__subheading{
+    margin-top: 25px;
+    font-size: 36px;
+    text-transform: none;
+  }
+
+  .tm__desc {
+    font-size: 30px;
+
+    @include mq(xs) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mq(sm) {
+      font-size: 21px;
+      line-height: 22px;
+    }
+  }
+}
+
+#support_h {
+
+    .slick-slide {
+      margin: 0 7.5px;
+    }
+  
+    /* the parent */
+    .slick-list {
+      margin: 0 -7.5px;
+    }
+  
+    .single-slide {
+      position: relative;
+      overflow: hidden;
+        
+      img {
+        transition: transform 250ms ease-out 0s;
+      }
+  
+      &:hover {
+        img {
+          @include mq(xs) {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  
+    .slick-dots {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+      gap: 8px;
+  
+      li {
+        width: 9px;
+        height: 9px;
+        background: #000;
+        border-radius: 100%;
+        border: 1px solid #707070;
+        opacity: 0.2;
+        cursor: pointer;
+  
+        &.slick-active {
+          opacity: 1;
+        }
+  
+        button {
+          display: none;
+        }
+      }
+  
+      @include mq(xs) {
+        display: flex;
+      }
+    }
+}
